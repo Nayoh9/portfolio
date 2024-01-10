@@ -6,13 +6,44 @@ export default {
       "white": "#FFFFFF",
       "black": "#000000"
     },
-    backgroundImage: {
-      "hero-banner": "url('https://res.cloudinary.com/dwkwlok28/image/upload/v1704811696/portfolio/cloud-background_idlorr.jpg')"
-    },
     fontFamily: {
       "mont": "Montserrat"
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        // Nom du keyframe
+        "fadeAnim": {
+          '0%': {
+            transform: 'translateY(-30px)',
+            opacity: 0
+          },
+
+          "100%": {
+            transform: 'translateY(0)',
+
+          }
+        },
+
+        'fadeHeader': {
+          "0%": {
+            opacity: 0
+          },
+          "50%": {
+            opacity: 0
+          },
+
+
+          "100%": { opacity: 1 }
+        },
+
+
+      },
+      animation: {
+        // Nom de la classe utilitaire pour utiliser l'anim + 
+        "fadeAnim": "fadeAnim 4s ease-out 1",
+        "fadeHeader": "fadeHeader 4s ease-out 1 "
+      }
+    },
   },
   plugins: [],
 }
