@@ -4,7 +4,9 @@ export default {
   theme: {
     colors: {
       "white": "#FFFFFF",
-      "black": "#000000"
+      "black": "#000000",
+      "grey": "#808080",
+      "lightGrey": "#D3D3D3"
     },
     fontFamily: {
       "mont": "Montserrat"
@@ -23,7 +25,6 @@ export default {
 
           }
         },
-
         'fadeHeader': {
           "0%": {
             opacity: 0
@@ -31,8 +32,6 @@ export default {
           "50%": {
             opacity: 0
           },
-
-
           "100%": { opacity: 1 }
         },
 
