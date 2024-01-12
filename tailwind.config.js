@@ -11,18 +11,22 @@ export default {
     fontFamily: {
       "mont": "Montserrat"
     },
+    backgroundImage: {
+      heroBackGround: "url('https://res.cloudinary.com/dwkwlok28/image/upload/v1704811696/portfolio/cloud-background_idlorr.jpg')"
+    },
+    height: {
+      homeHeight: "80vh"
+    },
     extend: {
       keyframes: {
         // Nom du keyframe
         "fadeAnim": {
           '0%': {
-            transform: 'translateY(-30px)',
-            opacity: 0
+            // transform: 'translateY(-10px)',
+            opacity: 50
           },
-
           "100%": {
-            transform: 'translateY(0)',
-
+            // transform: 'translateY(0px)',
           }
         },
         'fadeHeader': {
@@ -30,6 +34,9 @@ export default {
             opacity: 0
           },
           "50%": {
+            opacity: 0
+          },
+          "75%": {
             opacity: 0
           },
           "100%": { opacity: 1 }
