@@ -2,19 +2,20 @@
 import "./App.css";
 
 // Component import
-import About from "./components/About";
 import Home from "./components/Home";
+import About from "./components/About";
+import Projects from "./components/Projects";
 
 // Package import
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faGear, faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faGear, faDownload, faLink } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedinIn,
-  faInstagram,
   faWhatsapp,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faGear, faLinkedinIn, faInstagram, faWhatsapp, faDownload);
+library.add(faGear, faLinkedinIn, faWhatsapp, faDownload, faGithub, faLink);
 
 function App() {
   window.scrollTo(0, 0);
@@ -22,6 +23,7 @@ function App() {
     <main className="relative w-screen bg-white">
       <Home />
       <About />
+      <Projects />
     </main>
   );
 }

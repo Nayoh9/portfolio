@@ -15,7 +15,12 @@ export default {
       heroBackGround: "url('https://res.cloudinary.com/dwkwlok28/image/upload/v1704811696/portfolio/cloud-background_idlorr.jpg')"
     },
     height: {
-      homeHeight: "80vh"
+      homeHeight: "80vh",
+      reactLogoHeight: "96px",
+      projectDivHeight: "550px"
+    },
+    minHeight: {
+      minProjectDivHeight: "550px"
     },
     extend: {
       keyframes: {

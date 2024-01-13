@@ -31,11 +31,11 @@ const Home = () => {
           setIsGearClicked(false);
         }
       }}
-      className="bg-heroBackGround h-homeHeight mb-44 flex flex-col bg-cover bg-center font-mont text-white"
+      className="mb-40 flex h-homeHeight flex-col bg-heroBackGround bg-cover bg-center font-mont text-white"
     >
-      <div className=" z-00 h-homeHeight absolute top-0 w-full animate-fadeAnim bg-black opacity-50"></div>
+      <div className=" z-00 absolute top-0 h-homeHeight w-full animate-fadeAnim bg-black opacity-50"></div>
 
-      <header className="relative mt-5 flex h-20 w-full animate-fadeHeader items-center justify-between px-32">
+      <header className="h-20 relative mt-5 flex w-full animate-fadeHeader items-center justify-between px-32">
         <p className="font-semibold">
           <span className="text-xl font-extrabold">Y</span>ohann
         </p>
@@ -56,7 +56,7 @@ const Home = () => {
           </ul>
         </nav>
       </header>
-      <div className="h-homeHeight z-30 flex w-full flex-col items-center justify-center gap-3 text-center">
+      <div className="z-30 flex h-homeHeight w-full flex-col items-center justify-center gap-3 text-center">
         <p className="text-xl font-semibold opacity-70">
           {counter >= 4 && <Typewriter words={["Hello,"]} typeSpeed={100} />}
           {counter === 4 && <Cursor />}
@@ -80,7 +80,9 @@ const Home = () => {
             src="https://res.cloudinary.com/dwkwlok28/image/upload/v1704821683/portfolio/line-white_td9yia.svg"
             className="w-10 opacity-60"
           />
-          <p className="relative text-xs font-extralight">ANDRE YOHANN</p>
+          <p className="relative text-xs font-extralight">
+            Looking for an internship
+          </p>
           <img
             src="https://res.cloudinary.com/dwkwlok28/image/upload/v1704821683/portfolio/line-white_td9yia.svg"
             className="w-10 opacity-60"
@@ -93,7 +95,7 @@ const Home = () => {
 
       <div className="absolute top-40 z-40 animate-fadeHeader ">
         <div
-          className=" flex h-6 w-6 items-center justify-center rounded-sm bg-white"
+          className=" h-6 flex w-6 items-center justify-center rounded-sm bg-white"
           onClick={handleOpenGearMenu}
         >
           <FontAwesomeIcon
@@ -124,12 +126,9 @@ const Home = () => {
               className=" transition-all hover:scale-150"
             />
           </a>
-          <a
-            href="https://www.instagram.com/naysnayoh/?hl=en-gb "
-            target="blank"
-          >
+          <a href="https://github.com/Nayoh9" target="blank">
             <FontAwesomeIcon
-              icon="fa-brands fa-instagram"
+              icon="fa-brands fa-github"
               style={{ color: "#ffffff" }}
               className=" transition-all hover:scale-150"
             />
