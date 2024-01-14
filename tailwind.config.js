@@ -17,10 +17,9 @@ export default {
     height: {
       homeHeight: "80vh",
       reactLogoHeight: "96px",
-      projectDivHeight: "550px"
-    },
-    minHeight: {
-      minProjectDivHeight: "550px"
+      projectDivHeight: "100%",
+      imageProjectHeight: "150px",
+      logoTitleProjectHeight: "40px"
     },
     extend: {
       keyframes: {
@@ -39,9 +38,6 @@ export default {
             opacity: 0
           },
           "50%": {
-            opacity: 0
-          },
-          "75%": {
             opacity: 0
           },
           "100%": { opacity: 1 }
