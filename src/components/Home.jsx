@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCounter((prevCounter) => {
-        if (prevCounter === 6) {
+        if (prevCounter === 5) {
           clearInterval(interval);
         }
         return prevCounter + 1;
@@ -58,16 +58,16 @@ const Home = () => {
       </header>
       <div className="z-30 flex h-homeHeight w-full flex-col items-center justify-center gap-3 text-center">
         <p className="text-xl font-semibold opacity-70">
-          {counter >= 4 && <Typewriter words={["Hello,"]} typeSpeed={100} />}
-          {counter === 4 && <Cursor />}
+          {counter >= 3 && <Typewriter words={["Hello,"]} typeSpeed={100} />}
+          {counter === 3 && <Cursor />}
         </p>
 
         <h1 className="text-3xl font-semibold">
           <span className="font-extralight">
-            {counter >= 5 && <Typewriter words={["I Am"]} typeSpeed={100} />}
-            {counter === 5 && <Cursor />}
+            {counter >= 4 && <Typewriter words={["I Am"]} typeSpeed={100} />}
+            {counter === 4 && <Cursor />}
           </span>
-          {counter >= 6 && (
+          {counter >= 5 && (
             <Typewriter
               words={[" ANDRE Yohann.", " FULL STACK JUNIOR DEVELOPER."]}
               typeSpeed={100}
