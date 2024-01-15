@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Journey from "./components/Journey";
 
 // Package import
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -24,6 +25,7 @@ function App() {
       <Home />
       <About />
       <Projects />
+      <Journey />
     </main>
   );
 }

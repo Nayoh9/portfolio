@@ -24,9 +24,9 @@ const About = () => {
   };
 
   return (
-    <section className="flex w-screen flex-col items-center justify-center font-mont">
+    <section className="mb-40 flex w-screen flex-col items-center justify-center font-mont">
       <motion.article
-        className="mb-40 flex w-3/5 gap-x-6"
+        className="mb-20 flex w-3/5 gap-x-6"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: counter === 1 ? 1 : 0 }}
         transition={{ duration: 2 }}
@@ -92,7 +92,7 @@ const About = () => {
       </motion.article>
 
       <motion.article
-        className="mb-40 flex w-full justify-center bg-lightGrey p-16"
+        className=" flex w-full justify-center bg-lightGrey p-16"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2 }}

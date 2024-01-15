@@ -1,12 +1,13 @@
 // Package import
 import { motion } from "framer-motion";
 
-const PortfolioProject = () => {
+const PortfolioProject = ({ setIsDelayed, isDelayed }) => {
+  console.log(isDelayed);
   return (
     <motion.article
-      initial={{ opacity: 0, translateY: "-100px" }}
+      initial={{ opacity: 0, translateY: "100px" }}
       whileInView={{ opacity: 1, translateY: 0 }}
-      transition={{ duration: 1, delay: 2 }}
+      transition={{ duration: 1, delay: isDelayed ? 2 : 0.2 }}
       viewport={{ once: true }}
       className="flex h-projectDivHeight justify-center"
     >
@@ -14,13 +15,13 @@ const PortfolioProject = () => {
         <img
           src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705267490/portfolio/scansip_t524mx.svg"
           alt="Scan Sip écrit en blanc et vert sur fond noir"
-          className="w-26 h-imageProjectHeight mx-auto"
+          className="w-26 mx-auto h-imageProjectHeight"
         />
         <div className="my-6 flex items-center pl-2">
           <img
             src="src/assets/Laptop_icon.svg"
             alt="Laptop"
-            className="h-logoTitleProjectHeight mr-2 w-12"
+            className="mr-2 h-logoTitleProjectHeight w-12"
           />
 
           <p className="text-xl font-bold">My Portfolio</p>
