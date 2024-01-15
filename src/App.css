@@ -5,3 +5,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+.timeline::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: lightgray;
+  position: absolute;
+}
