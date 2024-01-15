@@ -1,12 +1,12 @@
 // Package import
 import { motion } from "framer-motion";
 
-const MarvelProject = () => {
+const MarvelProject = ({ setIsDelayed, isDelayed }) => {
   return (
     <motion.article
-      initial={{ opacity: 0, translateY: "-100px" }}
+      initial={{ opacity: 0, translateY: "100px" }}
       whileInView={{ opacity: 1, translateY: 0 }}
-      transition={{ duration: 1, delay: 1 }}
+      transition={{ duration: 1, delay: isDelayed ? 1 : 0.2 }}
       viewport={{ once: true }}
       className="flex h-projectDivHeight justify-center"
     >
@@ -14,7 +14,7 @@ const MarvelProject = () => {
         <img
           src="https://res.cloudinary.com/dwkwlok28/image/upload/v1703682526/marvel/marvel-logo_pgsubf.svg"
           alt="Marvel écrit en blanc sur fond rouge"
-          className=" h-imageProjectHeight mx-auto w-64 "
+          className=" mx-auto h-imageProjectHeight w-64 "
         />
         <div className=" my-6 flex items-center">
           <img

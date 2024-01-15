@@ -19,7 +19,8 @@ export default {
       reactLogoHeight: "96px",
       projectDivHeight: "100%",
       imageProjectHeight: "150px",
-      logoTitleProjectHeight: "40px"
+      logoTitleProjectHeight: "40px",
+      timeLineHeight: "1500px"
     },
     extend: {
       keyframes: {
