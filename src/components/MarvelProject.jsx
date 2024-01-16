@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 
 const MarvelProject = ({ setIsDelayed, isDelayed }) => {
+  const hello = "";
   return (
     <motion.article
       initial={{ opacity: 0, translateY: "100px" }}
@@ -12,13 +13,13 @@ const MarvelProject = ({ setIsDelayed, isDelayed }) => {
     >
       <div className=" w-96 rounded-md bg-lightGrey py-6">
         <img
-          src="https://res.cloudinary.com/dwkwlok28/image/upload/v1703682526/marvel/marvel-logo_pgsubf.svg"
+          src="/assets/marvel-logo_pgsubf.svg"
           alt="Marvel écrit en blanc sur fond rouge"
           className=" mx-auto h-imageProjectHeight w-64 "
         />
         <div className=" my-6 flex items-center">
           <img
-            src="https://res.cloudinary.com/dwkwlok28/image/upload/v1704380261/marvel/captain-america-seeklogo.com_j7odqp.svg"
+            src="/assets/captain-america-seeklogo.com_j7odqp.svg"
             alt="Bouclier du capitaine America"
             className="h-logoTitleProjectHeight w-10"
           />
@@ -40,17 +41,13 @@ const MarvelProject = ({ setIsDelayed, isDelayed }) => {
         <div className="my-6 flex justify-center">
           <a href="https://github.com/Nayoh9?tab=repositories" target="blank">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1703686714/marvel/github_irxfsl.png"
+              src="/assets/stack portfolio/github_irxfsl.png"
               alt="chat blanc sur fond noir, logo github"
               className="w-10"
             />
           </a>
           <a href="https://marvel-universe-9.netlify.app/" target="blank">
-            <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705163611/171454_link_icon_kffqao.png"
-              alt=""
-              className="w-10"
-            />
+            <img src="/assets/171454_link_icon.png" alt="" className="w-10" />
           </a>
         </div>
 
@@ -73,7 +70,7 @@ const MarvelProject = ({ setIsDelayed, isDelayed }) => {
         <div className="flex flex-wrap justify-center gap-x-2">
           <div className="flex items-center">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153633/stack/reactjs-19291084_hyqk5s.png"
+              src="/assets/stack portfolio/reactjs-19291084.png"
               alt="Logo react"
               className="w-8"
             />
@@ -81,7 +78,7 @@ const MarvelProject = ({ setIsDelayed, isDelayed }) => {
           </div>
           <div className="flex items-center">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705165638/stack/pngfind.com-pc-master-race-png-1363736_fspo7d.png"
+              src="/assets/stack portfolio/express.png"
               alt="Lettre E et X represantant express.js"
               className="w-8"
             />
@@ -89,7 +86,7 @@ const MarvelProject = ({ setIsDelayed, isDelayed }) => {
           </div>
           <div className="flex items-center ">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153633/stack/nodejs-d83eb6dd_bj3ceg.png"
+              src="/assets/stack portfolio/nodejs-d83eb6dd.png"
               alt="symbole node JS écrit en vert"
               className="w-8"
             />
@@ -98,7 +95,7 @@ const MarvelProject = ({ setIsDelayed, isDelayed }) => {
 
           <div className="flex items-center ">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153632/stack/mongodb-54000b2b_qevqcx.png"
+              src="/assets/stack portfolio/mongodb-54000b2b.png"
               alt="une feuille au millieu d'un écusson representant le logo mongoDB"
               className="w-8"
             />
@@ -107,7 +104,7 @@ const MarvelProject = ({ setIsDelayed, isDelayed }) => {
 
           <div className="flex items-center ">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153632/stack/css-79a7f026_iherah.png"
+              src="/assets/stack portfolio/css-79a7f026.png"
               alt="image representant un symbole css blanc sur fond bleu "
               className="w-8"
             />

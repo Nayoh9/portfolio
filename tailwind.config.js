@@ -12,7 +12,7 @@ export default {
       "mont": "Montserrat"
     },
     backgroundImage: {
-      heroBackGround: "url('https://res.cloudinary.com/dwkwlok28/image/upload/v1704811696/portfolio/cloud-background_idlorr.jpg')"
+      heroBackGround: "url('/assets/cloud-background.jpeg')"
     },
     height: {
       homeHeight: "80vh",
