@@ -79,10 +79,7 @@ const Home = () => {
           {counter >= 6 && <Cursor />}
         </h1>
         <div className="flex animate-fadeHeader items-center gap-x-3">
-          <img
-            src="https://res.cloudinary.com/dwkwlok28/image/upload/v1704821683/portfolio/line-white_td9yia.svg"
-            className="w-10 opacity-60"
-          />
+          <img src="src/assets/line-white.svg" className="w-10 opacity-60" />
           <p className="relative text-xs font-extralight">
             Looking for an internship
           </p>
