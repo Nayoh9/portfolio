@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
-import resume from "../assets/CV_ANDRE_YOHANN.pdf";
+import resume from "/assets/CV_ANDRE_YOHANN.pdf";
 import { useEffect, useState } from "react";
 
 const About = () => {
@@ -78,15 +78,15 @@ const About = () => {
             </div>
           </div>
           <div className="flex items-center">
-            <button className="mt-10 flex w-fit rounded-2xl bg-black p-2 px-4 text-white">
-              <a href={resume} className="flex" download="CV_ANDRE_YOHANN.pdf">
+            <a href={resume} className="flex" download="CV_ANDRE_YOHANN.pdf">
+              <button className="mt-10 flex w-fit rounded-2xl bg-black p-2 px-4 text-white">
                 <FontAwesomeIcon
                   icon="fa-solid fa-download"
                   style={{ color: "#ffffff" }}
                 />
                 <p className=" pl-3">DOWNLOAD CV</p>
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>
       </motion.article>
