@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Typewriter, Cursor } from "react-simple-typewriter";
 
 const Home = () => {
+  const hello = "";
   const [isGearClicked, setIsGearClicked] = useState(false);
   const [counter, setCounter] = useState(0);
 
