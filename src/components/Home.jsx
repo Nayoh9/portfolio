@@ -7,6 +7,8 @@ const Home = () => {
   const [isGearClicked, setIsGearClicked] = useState(false);
   const [counter, setCounter] = useState(0);
 
+  const hello = "";
+
   const handleOpenGearMenu = () => {
     isGearClicked ? setIsGearClicked(false) : setIsGearClicked(true);
   };
