@@ -26,14 +26,14 @@ const About = () => {
   return (
     <section className="mb-40 flex w-screen flex-col items-center justify-center font-mont">
       <motion.article
-        className="mb-20 flex w-3/5 gap-x-6"
+        className="mb-40 flex w-3/5 gap-x-6"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: counter === 1 ? 1 : 0 }}
         transition={{ duration: 2 }}
         viewport={{ once: true }}
       >
         <img
-          src="src/assets/Photo floutée.jpeg"
+          src="/assets/photoflouté.jpeg"
           alt="Photo d'un homme sur fond vert"
           className="w-60 border-4 border-double border-lightGrey object-cover"
         />
@@ -108,7 +108,7 @@ const About = () => {
                 target="blank"
               >
                 <img
-                  src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153632/stack/html-92b76a73_ogc274.png"
+                  src="/assets/stack portfolio/html-92b76a73.png"
                   alt="symbole HTML blanc sur fond orange"
                   className="w-24 transition-all hover:scale-125"
                 />
@@ -118,7 +118,7 @@ const About = () => {
                 target="blank"
               >
                 <img
-                  src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153632/stack/css-79a7f026_iherah.png"
+                  src="/assets/stack portfolio/css-79a7f026.png"
                   className="w-24 transition-all hover:scale-125"
                   alt="image representant un symbole css blanc sur fond bleu "
                 />
@@ -128,63 +128,63 @@ const About = () => {
                 target="blank"
               >
                 <img
-                  src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153632/stack/js_drjbr2.png"
+                  src="/assets/stack portfolio/js.png"
                   alt="lettre JS de Javascript écrit en noir sur fond jaune"
                   className="w-24 transition-all hover:scale-125"
                 />
               </a>
               <a href="https://expressjs.com/fr/" target="blank">
                 <img
-                  src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705165638/stack/pngfind.com-pc-master-race-png-1363736_fspo7d.png"
+                  src="/assets/stack portfolio/express.png"
                   alt="Lettre E et X represantant express.js"
                   className="w-24 transition-all hover:scale-125"
                 />
               </a>
               <a href="https://tailwindcss.com/" target="blank">
                 <img
-                  src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153633/stack/tailwind-6ece120d_bmtg11.png"
+                  src="/assets/stack portfolio/tailwind-6ece120d.png"
                   alt="Deux traits bleus qui representent le logo tailwind"
                   className="w-24 transition-all hover:scale-125"
                 />
               </a>
               <a href="https://nodejs.org/en" target="blank">
                 <img
-                  src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153633/stack/nodejs-d83eb6dd_bj3ceg.png"
+                  src="/assets/stack portfolio/nodejs-d83eb6dd.png"
                   alt="symbole node JS écrit en vert"
                   className="w-24 transition-all hover:scale-125"
                 />
               </a>
               <a href="https://reactnative.dev/" target="blank">
                 <img
-                  src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153633/stack/reactNative-6e0e6bbf_nb2dkf.png"
+                  src="/assets/stack portfolio/reactNative-6e0e6bbf.png"
                   alt="logo react native"
                   className="w-24 transition-all hover:scale-125"
                 />
               </a>
               <a href="https://react.dev/" target="blank">
                 <img
-                  src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153633/stack/reactjs-19291084_hyqk5s.png"
+                  src="/assets/stack portfolio/reactjs-19291084.png"
                   alt="Logo react"
                   className="h-reactLogoHeight w-24 transition-all hover:scale-125"
                 />
               </a>
               <a href="https://www.mongodb.com/fr-fr" target="blank">
                 <img
-                  src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153632/stack/mongodb-54000b2b_qevqcx.png"
+                  src="/assets/stack portfolio/mongodb-54000b2b.png"
                   alt="une feuille au millieu d'un écusson representant le logo mongoDB"
                   className="w-24 transition-all hover:scale-125"
                 />
               </a>
               <a href="https://git-scm.com/" target="blank">
                 <img
-                  src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153632/stack/git_xndgp7.png"
+                  src="/assets/stack portfolio/git.png"
                   alt="logo git transparent sur fond orange"
                   className="w-24 transition-all hover:scale-125"
                 />
               </a>
               <a href="https://github.com/Nayoh9" target="blank">
                 <img
-                  src="https://res.cloudinary.com/dwkwlok28/image/upload/v1703686714/marvel/github_irxfsl.png"
+                  src="/assets/stack portfolio/github_irxfsl.png"
                   alt="Chat transparent sur fond blanc representant le logo github"
                   className="w-24 transition-all hover:scale-125"
                 />

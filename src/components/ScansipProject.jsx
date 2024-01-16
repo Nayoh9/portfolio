@@ -91,7 +91,7 @@ const ScansipProject = ({ setIsDelayed, isDelayed }) => {
         <div className="flex flex-wrap justify-center gap-x-2">
           <div className="flex items-center">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153633/stack/reactjs-19291084_hyqk5s.png"
+              src="/assets/stack portfolio/reactjs-19291084.png"
               alt="Logo react"
               className="w-8"
             />
@@ -99,7 +99,7 @@ const ScansipProject = ({ setIsDelayed, isDelayed }) => {
           </div>
           <div className="flex items-center">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705165638/stack/pngfind.com-pc-master-race-png-1363736_fspo7d.png"
+              src="/assets/stack portfolio/express.png"
               alt="Lettre E et X represantant express.js"
               className="w-8"
             />
@@ -107,7 +107,7 @@ const ScansipProject = ({ setIsDelayed, isDelayed }) => {
           </div>
           <div className="flex items-center ">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153633/stack/nodejs-d83eb6dd_bj3ceg.png"
+              src="/assets/stack portfolio/nodejs-d83eb6dd.png"
               alt="symbole node JS écrit en vert"
               className="w-8"
             />
@@ -116,7 +116,7 @@ const ScansipProject = ({ setIsDelayed, isDelayed }) => {
 
           <div className="flex items-center ">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153632/stack/mongodb-54000b2b_qevqcx.png"
+              src="/assets/stack portfolio/mongodb-54000b2b.png"
               alt="une feuille au millieu d'un écusson representant le logo mongoDB"
               className="w-8"
             />
@@ -125,8 +125,8 @@ const ScansipProject = ({ setIsDelayed, isDelayed }) => {
 
           <div className="flex items-center ">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153633/stack/tailwind-6ece120d_bmtg11.png"
-              alt="Deux traits bleus representant le logo Tailwind"
+              src="/assets/stack portfolio/tailwind-6ece120d.png"
+              alt="Deux traits bleus ondulés representant le logo tailwind"
               className="w-8"
             />
             <p className="ml-1 text-xs font-semibold">Tailwind</p>
