@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 
 const PortfolioProject = ({ setIsDelayed, isDelayed }) => {
-  console.log(isDelayed);
   return (
     <motion.article
       initial={{ opacity: 0, translateY: "100px" }}
