@@ -12,13 +12,13 @@ const PortfolioProject = ({ setIsDelayed, isDelayed }) => {
     >
       <div className="w-96 rounded-md bg-lightGrey py-6">
         <img
-          src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705267490/portfolio/scansip_t524mx.svg"
+          src="/assets/logoy.svg"
           alt="Scan Sip écrit en blanc et vert sur fond noir"
           className="w-26 mx-auto h-imageProjectHeight"
         />
         <div className="my-6 flex items-center pl-2">
           <img
-            src="src/assets/Laptop_icon.svg"
+            src="/assets/Laptop_icon.svg"
             alt="Laptop"
             className="mr-2 h-logoTitleProjectHeight w-12"
           />
@@ -40,17 +40,13 @@ const PortfolioProject = ({ setIsDelayed, isDelayed }) => {
         <div className="my-6 flex justify-center">
           <a href="https://github.com/Nayoh9?tab=repositories" target="blank">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1703686714/marvel/github_irxfsl.png"
+              src="/assets/stack portfolio/github_irxfsl.png"
               alt="chat blanc sur fond noir, logo github"
               className="w-10"
             />
           </a>
           <a href="https://andre-yohann.netlify.app/" target="blank">
-            <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705163611/171454_link_icon_kffqao.png"
-              alt=""
-              className="w-10"
-            />
+            <img src="/assets/171454_link_icon.png" alt="" className="w-10" />
           </a>
         </div>
 
@@ -66,7 +62,7 @@ const PortfolioProject = ({ setIsDelayed, isDelayed }) => {
         <div className="flex flex-wrap justify-center gap-x-2">
           <div className="flex items-center">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153633/stack/reactjs-19291084_hyqk5s.png"
+              src="/assets/stack portfolio/reactjs-19291084.png"
               alt="Logo react"
               className="w-8"
             />
@@ -75,7 +71,7 @@ const PortfolioProject = ({ setIsDelayed, isDelayed }) => {
 
           <div className="flex items-center ">
             <img
-              src="https://res.cloudinary.com/dwkwlok28/image/upload/v1705153633/stack/tailwind-6ece120d_bmtg11.png"
+              src="/assets/stack portfolio/tailwind-6ece120d.png"
               alt="Deux traits bleus representant le logo Tailwind"
               className="w-8"
             />
