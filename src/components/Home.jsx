@@ -4,9 +4,10 @@ import { useState, useEffect } from "react";
 import { Typewriter, Cursor } from "react-simple-typewriter";
 
 const Home = () => {
-  const hello = "";
   const [isGearClicked, setIsGearClicked] = useState(false);
   const [counter, setCounter] = useState(0);
+
+  const hello = "";
 
   const handleOpenGearMenu = () => {
     isGearClicked ? setIsGearClicked(false) : setIsGearClicked(true);
@@ -80,14 +81,11 @@ const Home = () => {
           {counter >= 6 && <Cursor />}
         </h1>
         <div className="flex animate-fadeHeader items-center gap-x-3">
-          <img src="./src/assets/line-white.svg" className="w-10 opacity-60" />
+          <img src="src/assets/line-white.svg" className="w-10 opacity-60" />
           <p className="relative text-xs font-extralight">
             Looking for an internship
           </p>
-          <img
-            src="https://res.cloudinary.com/dwkwlok28/image/upload/v1704821683/portfolio/line-white_td9yia.svg"
-            className="w-10 opacity-60"
-          />
+          <img src="src/assets/line-white.svg" className="w-10 opacity-60" />
         </div>
         <button className="animate-fadeHeader rounded-xl bg-white px-5 py-1 text-sm font-semibold text-black transition-all duration-500 ease-linear hover:bg-black hover:text-white">
           HIRE ME
