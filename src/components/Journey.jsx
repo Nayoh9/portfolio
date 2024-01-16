@@ -13,7 +13,7 @@ const divJourneyVariants = {
 
 const Journey = () => {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col font-mont">
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -60,9 +60,9 @@ const Journey = () => {
             className="  z-10 flex w-full justify-center "
             viewport={{ once: true }}
           >
-            <div className=" h-logoTimelineHeight flex w-14 translate-y-12  justify-center rounded-3xl bg-lightGrey">
+            <div className=" flex h-logoTimelineHeight w-14 translate-y-12  justify-center rounded-3xl bg-lightGrey">
               <img
-                src="src/assets/sandwich-svgrepo-com.svg"
+                src="/assets/sandwich-svgrepo-com.svg"
                 className="z-10 w-10 "
               />
             </div>
@@ -89,7 +89,7 @@ const Journey = () => {
               Consequatur veniam quo non.
             </p>
 
-            <p className="absolute -left-44">21/21/2003</p>
+            <p className="absolute -left-48">21/21/2003</p>
           </motion.div>
         </article>
       </section>

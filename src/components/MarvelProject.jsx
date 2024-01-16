@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 
 const MarvelProject = ({ setIsDelayed, isDelayed }) => {
-  const hello = "";
   return (
     <motion.article
       initial={{ opacity: 0, translateY: "100px" }}
