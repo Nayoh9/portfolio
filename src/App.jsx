@@ -9,14 +9,27 @@ import Journey from "./components/Journey";
 
 // Package import
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faGear, faDownload, faLink } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGear,
+  faDownload,
+  faLink,
+  faPlay,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedinIn,
   faWhatsapp,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faGear, faLinkedinIn, faWhatsapp, faDownload, faGithub, faLink);
+library.add(
+  faGear,
+  faLinkedinIn,
+  faWhatsapp,
+  faDownload,
+  faGithub,
+  faLink,
+  faPlay,
+);
 
 function App() {
   window.scrollTo(0, 0);

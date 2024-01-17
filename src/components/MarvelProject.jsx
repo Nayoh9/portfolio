@@ -6,7 +6,7 @@ const MarvelProject = ({ setIsDelayed, isDelayed }) => {
     <motion.article
       initial={{ opacity: 0, translateY: "100px" }}
       whileInView={{ opacity: 1, translateY: 0 }}
-      transition={{ duration: 1, delay: isDelayed ? 1 : 0.2 }}
+      transition={{ duration: 1, delay: isDelayed ? 0.5 : 0.2 }}
       viewport={{ once: true }}
       className="flex h-projectDivHeight justify-center"
     >
@@ -27,7 +27,7 @@ const MarvelProject = ({ setIsDelayed, isDelayed }) => {
         </div>
 
         <div>
-          <p className="pl-2">
+          <p className="p-2">
             This project queries an API to gather all Marvel heroes and comics.
             By clicking on these heroes or comics, you can access detailed
             information about them. The option to create an account is available
