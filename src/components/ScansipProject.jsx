@@ -6,7 +6,7 @@ const ScansipProject = ({ setIsDelayed, isDelayed }) => {
     <motion.article
       initial={{ opacity: 0, translateY: "100px" }}
       whileInView={{ opacity: 1, translateY: 0 }}
-      transition={{ duration: 1, delay: isDelayed ? 1.5 : 0.2 }}
+      transition={{ duration: 1, delay: isDelayed ? 1 : 0.2 }}
       viewport={{ once: true }}
       className="flex h-projectDivHeight justify-center"
     >
@@ -27,7 +27,7 @@ const ScansipProject = ({ setIsDelayed, isDelayed }) => {
         </div>
 
         <div>
-          <p className="pl-2">
+          <p className="p-2">
             This web application offers a comprehensive management platform for
             restaurants, designed to be accessed through mobile devices for
             clients and tablets for administrators. It enables restaurant owners

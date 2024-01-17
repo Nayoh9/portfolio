@@ -20,16 +20,18 @@ export default {
       projectDivHeight: "100%",
       imageProjectHeight: "150px",
       logoTitleProjectHeight: "40px",
-      logoTimelineHeight: '50px'
+      logoTimelineHeight: '50px',
+      reacteurHeight: '30px'
     },
     minHeight: {
       timeLineHeight: "1500px"
     },
 
     extend: {
-      maxWidth: {
-        divTimelineWidth: "400px"
+      width: {
+        divTimelineWidth: "300px"
       },
+
       keyframes: {
         // Nom du keyframe
         "fadeAnim": {

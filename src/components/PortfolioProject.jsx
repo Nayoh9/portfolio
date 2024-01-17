@@ -6,7 +6,7 @@ const PortfolioProject = ({ setIsDelayed, isDelayed }) => {
     <motion.article
       initial={{ opacity: 0, translateY: "100px" }}
       whileInView={{ opacity: 1, translateY: 0 }}
-      transition={{ duration: 1, delay: isDelayed ? 2 : 0.2 }}
+      transition={{ duration: 1, delay: isDelayed ? 1.5 : 0.2 }}
       viewport={{ once: true }}
       className="flex h-projectDivHeight justify-center"
     >
@@ -27,7 +27,7 @@ const PortfolioProject = ({ setIsDelayed, isDelayed }) => {
         </div>
 
         <div>
-          <p className="pl-2">
+          <p className="p-2">
             As a junior developer, my portfolio serves as a comprehensive
             showcase of my skills, highlighting the projects I have already
             completed and providing an exciting preview of upcoming projects. It
