@@ -55,24 +55,24 @@ const About = () => {
           <div className="flex  gap-x-20">
             <div className="mt-4 flex flex-col">
               <div className="flex ">
-                <p className="w-20 min-w-fit  font-semibold">NAME </p>
+                <p className="w-24 min-w-fit  font-semibold">NAME </p>
                 <p>ANDRE Yohann</p>
               </div>
 
               <div className="flex ">
-                <p className="w-20  min-w-fit  font-semibold">OLD </p>
+                <p className="w-24  min-w-fit  font-semibold">OLD </p>
                 <p>28</p>
               </div>
             </div>
 
             <div className="mt-4 flex flex-col">
               <div className="flex ">
-                <p className="w-20 min-w-fit  font-semibold">EMAIL</p>
+                <p className="w-24 min-w-fit  font-semibold">EMAIL</p>
                 <p>y.andre90000@gmail.com</p>
               </div>
 
               <div className="flex ">
-                <p className="w-20 min-w-fit  font-semibold">ADRESS </p>
+                <p className="w-24 min-w-fit  font-semibold">ADDRESS </p>
                 <p>Delle, France</p>
               </div>
             </div>

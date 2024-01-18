@@ -26,13 +26,13 @@ const Journey = () => {
         My Journey
       </motion.h1>
 
-      <section className="timeline relative flex flex-col items-center gap-y-10">
+      <section className="timeline relative flex flex-col items-center gap-y-16">
         <article className=" flex w-5/12 flex-col">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="  z-10 flex w-full justify-center"
+            className="z-10 flex w-full justify-center"
             viewport={{ once: true }}
           >
             <div className="relative flex h-logoTimelineHeight w-14 translate-y-12  justify-center rounded-3xl bg-lightGrey">
@@ -44,8 +44,20 @@ const Journey = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
               />
+
+              <motion.p
+                className="absolute -right-24 top-3 text-lightGrey"
+                variants={divJourneyVariants}
+                whileInView="leftVisible"
+                initial={{ opacity: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
+                2013 - 2022
+              </motion.p>
             </div>
           </motion.div>
+
           <div className="flex justify-between">
             <motion.div
               className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 "
@@ -72,9 +84,6 @@ const Journey = () => {
                 In this environment, I was able to develop strong customer
                 relations skills, a great deal of precision, and a deep respect
                 for protocols.
-              </p>
-              <p className="absolute -right-48 top-3  text-lightGrey">
-                2013 - 2022
               </p>
 
               <FontAwesomeIcon
@@ -103,6 +112,16 @@ const Journey = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
               />
+              <motion.p
+                className="absolute -left-24 top-3 text-lightGrey"
+                variants={divJourneyVariants}
+                whileInView="rightVisible"
+                initial={{ opacity: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
+                2022 - 2023
+              </motion.p>
             </div>
           </motion.div>
           <motion.div
@@ -133,9 +152,6 @@ const Journey = () => {
               limitless possibilities. For almost a year, I continued to learn
               on my own.
             </p>
-            <p className="absolute -left-48 top-3  text-lightGrey">
-              2022 - 2023
-            </p>
 
             <FontAwesomeIcon
               icon="fa-solid fa-play"
@@ -156,12 +172,23 @@ const Journey = () => {
             <div className="flex h-logoTimelineHeight w-14 translate-y-12  justify-center rounded-3xl bg-lightGrey">
               <motion.img
                 src="/assets/reacteurLogo.jpeg"
-                className=" my-auto h-reacteurHeight w-8 rounded-full "
+                className=" relative my-auto h-reacteurHeight w-8 rounded-full "
                 whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
               />
+
+              <motion.p
+                className="customPositionOct absolute -right-28 top-3  text-lightGrey"
+                variants={divJourneyVariants}
+                whileInView="leftVisible"
+                initial={{ opacity: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
+                Oct 2023 - Dec 2023
+              </motion.p>
             </div>
           </motion.div>
           <motion.div
@@ -193,10 +220,6 @@ const Journey = () => {
               providing me with credibility in the professional world.
             </p>
 
-            <p className="customPositionOct absolute  top-3 text-lightGrey">
-              Oct - 2023
-            </p>
-
             <FontAwesomeIcon
               icon="fa-solid fa-play"
               style={{ color: "#D3D3D3" }}
@@ -222,6 +245,17 @@ const Journey = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
               />
+
+              <motion.p
+                className="customPositionDate absolute top-3 text-lightGrey"
+                variants={divJourneyVariants}
+                whileInView="rightVisible"
+                initial={{ opacity: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
+                Date()
+              </motion.p>
             </div>
           </motion.div>
           <motion.div
@@ -242,9 +276,6 @@ const Journey = () => {
               On my way to new challenges!
             </p>
 
-            <p className="customPositionDate absolute -left-48 top-3 text-lightGrey">
-              Date()
-            </p>
             <FontAwesomeIcon
               icon="fa-solid fa-play"
               style={{ color: "#D3D3D3" }}
