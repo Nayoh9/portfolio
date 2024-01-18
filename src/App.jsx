@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Journey from "./components/Journey";
+import Contact from "./components/Contact";
 
 // Package import
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -14,12 +15,14 @@ import {
   faDownload,
   faLink,
   faPlay,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedinIn,
   faWhatsapp,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
 
 library.add(
   faGear,
@@ -29,16 +32,27 @@ library.add(
   faGithub,
   faLink,
   faPlay,
+  faEnvelope,
 );
 
 function App() {
+  const [isDarkModeOn, setIsDarkModeOn] = useState(false);
+  const [isDelayed, setIsDelayed] = useState(
+    window.innerWidth < 1231 ? false : true,
+  );
+
+  isDarkModeOn
+    ? (document.body.style.backgroundColor = "black")
+    : (document.body.style.backgroundColor = "white");
+
   window.scrollTo(0, 0);
   return (
     <main className="relative w-screen bg-white">
       <Home />
       <About />
-      <Projects />
+      <Projects isDelayed={isDelayed} setIsDelayed={setIsDelayed} />
       <Journey />
+      <Contact isDelayed={isDelayed} setIsDelayed={setIsDelayed} />
     </main>
   );
 }

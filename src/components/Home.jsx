@@ -127,9 +127,9 @@ const Home = () => {
               className=" transition-all hover:scale-150"
             />
           </a>
-          <a href="https://wa.me/33659613598" target="blank">
+          <a href="mailto: y.andre90000@gmail.com" target="blank">
             <FontAwesomeIcon
-              icon="fa-brands fa-whatsapp"
+              icon="fa-solid fa-envelope"
               style={{ color: "#ffffff" }}
               className=" transition-all hover:scale-150"
             />
