@@ -2,35 +2,41 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    colors: {
-      "white": "#FFFFFF",
-      "black": "#000000",
-      "grey": "#808080",
-      "lightGrey": "#D3D3D3"
-    },
-    fontFamily: {
-      "mont": "Montserrat"
-    },
-    backgroundImage: {
-      heroBackGround: "url('/assets/cloud-background.jpeg')"
-    },
-    height: {
-      homeHeight: "80vh",
-      reactLogoHeight: "96px",
-      projectDivHeight: "100%",
-      imageProjectHeight: "150px",
-      logoTitleProjectHeight: "40px",
-      logoTimelineHeight: '50px',
-      reacteurHeight: '30px'
-    },
-    minHeight: {
-      timeLineHeight: "1500px"
-    },
+
 
     extend: {
       width: {
-        divTimelineWidth: "300px"
+        divTimelineWidth: "300px",
+        contactBoxWidth: "300px",
+      }, colors: {
+        "white": "#FFFFFF",
+        "black": "#000000",
+        "grey": "#808080",
+        "lightGrey": "#D3D3D3",
+        "linkedinColor": "#007FBC",
+        "gmailColor": "#C6221F"
       },
+      fontFamily: {
+        "mont": "Montserrat"
+      },
+      backgroundImage: {
+        heroBackGround: "url('/assets/cloud-background.jpeg')"
+      },
+      height: {
+        homeHeight: "80vh",
+        reactLogoHeight: "96px",
+        projectDivHeight: "100%",
+        imageProjectHeight: "150px",
+        logoTitleProjectHeight: "40px",
+        logoTimelineHeight: '50px',
+        reacteurHeight: '30px',
+        contactBoxHeight: '250px'
+      },
+      minHeight: {
+        timeLineHeight: "1500px"
+      },
+
+
 
       keyframes: {
         // Nom du keyframe

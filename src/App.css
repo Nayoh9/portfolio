@@ -13,3 +13,11 @@ html {
   background-color: lightgray;
   position: absolute;
 }
+
+.customPositionOct {
+  right: -180px;
+}
+
+.customPositionDate {
+  left: -150px;
+}

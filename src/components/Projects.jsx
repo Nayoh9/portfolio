@@ -7,11 +7,7 @@ import MarvelProject from "./MarvelProject";
 import ScansipProject from "./ScansipProject";
 import PortfolioProject from "./PortfolioProject";
 
-const Projects = () => {
-  const [isDelayed, setIsDelayed] = useState(
-    window.innerWidth < 1231 ? false : true,
-  );
-
+const Projects = ({ isDelayed, setIsDelayed }) => {
   return (
     <section className="mb-40 w-full font-mont">
       <motion.h1

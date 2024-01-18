@@ -15,7 +15,7 @@ const divJourneyVariants = {
 
 const Journey = () => {
   return (
-    <main className="flex flex-col font-mont">
+    <main className="mb-40 flex flex-col font-mont">
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -29,10 +29,7 @@ const Journey = () => {
       <section className="timeline relative flex flex-col items-center gap-y-10">
         <article className=" flex w-5/12 flex-col">
           <motion.div
-            animate={{
-              scale: [0, 1.2, 1],
-            }}
-            whileInView={{ opacity: 1 }}
+            whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="  z-10 flex w-full justify-center"
@@ -42,10 +39,7 @@ const Journey = () => {
               <motion.img
                 src="/assets/kyriad-seeklogo.svg"
                 className="w-15 relative z-10"
-                animate={{
-                  scale: [0, 1.2, 1],
-                }}
-                whileInView={{ opacity: 1 }}
+                whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
@@ -94,10 +88,7 @@ const Journey = () => {
 
         <article className="flex w-5/12 flex-col items-end">
           <motion.div
-            animate={{
-              scale: [0, 1.2, 1],
-            }}
-            whileInView={{ opacity: 1 }}
+            whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="  z-10 flex w-full justify-center "
@@ -107,10 +98,7 @@ const Journey = () => {
               <motion.img
                 src="/assets/programmingLaptop.png"
                 className="z-10 my-auto h-logoTitleProjectHeight w-10  "
-                animate={{
-                  scale: [0, 1.2, 1],
-                }}
-                whileInView={{ opacity: 1 }}
+                whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
@@ -159,10 +147,7 @@ const Journey = () => {
 
         <article className="mb-10 flex w-5/12 flex-col ">
           <motion.div
-            animate={{
-              scale: [0, 1.2, 1],
-            }}
-            whileInView={{ opacity: 1 }}
+            whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="  z-10 flex w-full justify-center"
@@ -171,11 +156,8 @@ const Journey = () => {
             <div className="flex h-logoTimelineHeight w-14 translate-y-12  justify-center rounded-3xl bg-lightGrey">
               <motion.img
                 src="/assets/reacteurLogo.jpeg"
-                className=" h-reacteurHeight my-auto w-8 rounded-full "
-                animate={{
-                  scale: [0, 1.2, 1],
-                }}
-                whileInView={{ opacity: 1 }}
+                className=" my-auto h-reacteurHeight w-8 rounded-full "
+                whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
@@ -211,7 +193,7 @@ const Journey = () => {
               providing me with credibility in the professional world.
             </p>
 
-            <p className="absolute -right-48 top-3 text-lightGrey">
+            <p className="customPositionOct absolute  top-3 text-lightGrey">
               Oct - 2023
             </p>
 
@@ -225,10 +207,7 @@ const Journey = () => {
 
         <article className="flex w-5/12 flex-col items-end">
           <motion.div
-            animate={{
-              scale: [0, 1.2, 1],
-            }}
-            whileInView={{ opacity: 1 }}
+            whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="  z-10 flex w-full justify-center "
@@ -238,10 +217,7 @@ const Journey = () => {
               <motion.img
                 src="/assets/interrogation.png"
                 className="z-10 my-auto h-logoTitleProjectHeight w-10  "
-                animate={{
-                  scale: [0, 1.2, 1],
-                }}
-                whileInView={{ opacity: 1 }}
+                whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
@@ -266,7 +242,9 @@ const Journey = () => {
               On my way to new challenges!
             </p>
 
-            <p className="absolute -left-48 top-3 text-lightGrey">Date.now()</p>
+            <p className="customPositionDate absolute -left-48 top-3 text-lightGrey">
+              Date()
+            </p>
             <FontAwesomeIcon
               icon="fa-solid fa-play"
               style={{ color: "#D3D3D3" }}
