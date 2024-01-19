@@ -15,7 +15,7 @@ const divJourneyVariants = {
 
 const Journey = () => {
   return (
-    <main className="mb-40 flex flex-col font-mont">
+    <main className="mb-28 flex flex-col pt-12 font-mont" id="journey">
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

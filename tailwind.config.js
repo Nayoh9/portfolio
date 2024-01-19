@@ -66,6 +66,19 @@ export default {
           "100%": {
             transform: "translateX(0px)"
           }
+        },
+        "scrollToTop": {
+          "0%": {
+            transform: "translateX(0px)",
+          },
+
+          "50%": {
+            transform: "translateX(10px)",
+          },
+
+          "100%": {
+            transform: "translateX(0px)",
+          }
         }
 
 
@@ -75,7 +88,8 @@ export default {
         // Nom de la classe utilitaire pour utiliser l'anim + 
         "fadeAnim": "fadeAnim 4s ease-out 1",
         "fadeHeader": "fadeHeader 4s ease-out 1 ",
-        "gigleSocials": "gigleSocials 0.2s ease-out 1"
+        "gigleSocials": "gigleSocials 0.2s ease-out 1",
+        "scrollToTop": "scrollToTop 1.3s ease-out infinite"
       }
     },
   },

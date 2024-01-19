@@ -7,6 +7,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Journey from "./components/Journey";
 import Contact from "./components/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Package import
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -16,6 +17,8 @@ import {
   faLink,
   faPlay,
   faEnvelope,
+  faArrowUp,
+  faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedinIn,
@@ -33,6 +36,7 @@ library.add(
   faLink,
   faPlay,
   faEnvelope,
+  faArrowLeft,
 );
 
 function App() {
@@ -45,7 +49,6 @@ function App() {
     ? (document.body.style.backgroundColor = "black")
     : (document.body.style.backgroundColor = "white");
 
-  window.scrollTo(0, 0);
   return (
     <main className="relative w-screen bg-white">
       <Home />
@@ -53,6 +56,7 @@ function App() {
       <Projects isDelayed={isDelayed} setIsDelayed={setIsDelayed} />
       <Journey />
       <Contact isDelayed={isDelayed} setIsDelayed={setIsDelayed} />
+      <ScrollToTop />
     </main>
   );
 }

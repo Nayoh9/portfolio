@@ -24,7 +24,10 @@ const About = () => {
   };
 
   return (
-    <section className="mb-40 flex w-screen flex-col items-center justify-center font-mont">
+    <section
+      id="about"
+      className="mb-28 flex w-screen flex-col items-center justify-center pt-12 font-mont"
+    >
       <motion.article
         className="mb-40 flex w-3/5 gap-x-6"
         initial={{ opacity: 0 }}
@@ -37,7 +40,7 @@ const About = () => {
           alt="Photo d'un homme sur fond vert"
           className="w-60 border-4 border-double border-lightGrey object-cover"
         />
-        <div className="h-fit flex flex-col">
+        <div className="flex h-fit flex-col">
           <div className="border-1 flex flex-col border-b border-solid border-lightGrey">
             <p className=" mb-2 text-lg font-semibold">Hello,</p>
             <h1 className="mb-4 font-semibold">
