@@ -29,7 +29,7 @@ const About = () => {
       className="mb-28 flex w-screen flex-col items-center justify-center pt-12 font-mont"
     >
       <motion.article
-        className="mb-40 flex w-3/5 gap-x-6"
+        className=" max-[900px]:flex-end mb-40 flex justify-center gap-x-6"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: counter === 1 ? 1 : 0 }}
         transition={{ duration: 2 }}
@@ -38,45 +38,61 @@ const About = () => {
         <img
           src="/assets/photoflouté.jpeg"
           alt="Photo d'un homme sur fond vert"
-          className="w-60 border-4 border-double border-lightGrey object-cover"
+          className="w-60 border-4 border-double border-lightGrey object-cover max-[900px]:mb-2 max-[900px]:h-fit max-[900px]:w-40  "
         />
-        <div className="flex h-fit flex-col">
+        <div className=" flex h-fit w-1/2 flex-col">
           <div className="border-1 flex flex-col border-b border-solid border-lightGrey">
-            <p className=" mb-2 text-lg font-semibold">Hello,</p>
-            <h1 className="mb-4 font-semibold">
+            <p className=" mb-2 text-lg font-semibold max-[750px]:text-sm">
+              Hello,
+            </p>
+            <h1 className="mb-4 font-semibold max-[750px]:text-sm">
               I AM A FULL STACK JUNIOR DEVELOPER
             </h1>
-            <p className="mb-4">
+            <p className=" max-xl:text-sm">
               I'm Andre Yohann, a 28-year-old full-stack web developer in
               transition. With a passion for crafting exceptional web
               experiences, I specialize in technologies like HTML, CSS,
               JavaScript, React.js, and Node.js. Explore my portfolio to see how
               I turn ideas into high-performance web solutions. Ready to
-              collaborate on your exciting projects ! See you soon.
+              collaborate on your exciting projects. See you soon!
             </p>
           </div>
-          <div className="flex  gap-x-20">
+          <div className="flex gap-x-20 max-[900px]:gap-x-1">
             <div className="mt-4 flex flex-col">
-              <div className="flex ">
-                <p className="w-24 min-w-fit  font-semibold">NAME </p>
-                <p>ANDRE Yohann</p>
+              <div className="flex max-[750px]:flex-col  ">
+                <p className="w-24 min-w-fit font-semibold max-[750px]:text-sm ">
+                  NAME
+                </p>
+                <p className=" max-xl:text-sm max-[750px]:text-xs">
+                  ANDRE Yohann
+                </p>
               </div>
 
-              <div className="flex ">
-                <p className="w-24  min-w-fit  font-semibold">OLD </p>
-                <p>28</p>
+              <div className="flex max-[750px]:flex-col">
+                <p className="w-24 min-w-fit font-semibold max-[750px]:text-sm">
+                  OLD
+                </p>
+                <p className=" max-xl:text-sm max-[750px]:text-xs">28</p>
               </div>
             </div>
 
             <div className="mt-4 flex flex-col">
-              <div className="flex ">
-                <p className="w-24 min-w-fit  font-semibold">EMAIL</p>
-                <p>y.andre90000@gmail.com</p>
+              <div className="flex max-[750px]:flex-col ">
+                <p className="w-24 min-w-fit font-semibold max-[750px]:text-sm">
+                  EMAIL
+                </p>
+                <p className=" max-xl:text-sm max-[750px]:text-xs  ">
+                  y.andre90000@gmail.com
+                </p>
               </div>
 
-              <div className="flex ">
-                <p className="w-24 min-w-fit  font-semibold">ADDRESS </p>
-                <p>Delle, France</p>
+              <div className="flex max-[750px]:flex-col">
+                <p className="w-24 min-w-fit  font-semibold max-[750px]:text-sm">
+                  ADDRESS
+                </p>
+                <p className="max-xl:text-sm max-[750px]:text-xs ">
+                  Delle, France
+                </p>
               </div>
             </div>
           </div>

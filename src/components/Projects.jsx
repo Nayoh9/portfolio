@@ -19,7 +19,7 @@ const Projects = ({ isDelayed, setIsDelayed }) => {
       >
         My Projects
       </motion.h1>
-      <motion.div className="flex flex-wrap justify-center gap-10">
+      <motion.div className=" flex flex-wrap justify-center gap-10 ">
         <MarvelProject setIsDelayed={setIsDelayed} isDelayed={isDelayed} />
         <ScansipProject setIsDelayed={setIsDelayed} isDelayed={isDelayed} />
         <PortfolioProject setIsDelayed={setIsDelayed} isDelayed={isDelayed} />

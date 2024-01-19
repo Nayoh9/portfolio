@@ -26,13 +26,13 @@ const Journey = () => {
         My Journey
       </motion.h1>
 
-      <section className="timeline relative flex flex-col items-center gap-y-16">
-        <article className=" flex w-5/12 flex-col">
+      <section className="timeline px- relative flex flex-col items-center gap-y-16">
+        <article className=" flex w-5/12 flex-col max-[1385px]:w-screen max-[1385px]:px-10 ">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="z-10 flex w-full justify-center"
+            className="max-[1385px]: z-10 flex w-full justify-center"
             viewport={{ once: true }}
           >
             <div className="relative flex h-logoTimelineHeight w-14 translate-y-12  justify-center rounded-3xl bg-lightGrey">
@@ -46,7 +46,7 @@ const Journey = () => {
               />
 
               <motion.p
-                className="absolute -right-24 top-3 text-lightGrey"
+                className=" text-lightGre absolute -right-24 top-3"
                 variants={divJourneyVariants}
                 whileInView="leftVisible"
                 initial={{ opacity: 0 }}
@@ -60,7 +60,7 @@ const Journey = () => {
 
           <div className="flex justify-between">
             <motion.div
-              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 "
+              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3  "
               variants={divJourneyVariants}
               whileInView="leftVisible"
               initial={{ opacity: 0 }}
@@ -95,7 +95,7 @@ const Journey = () => {
           </div>
         </article>
 
-        <article className="flex w-5/12 flex-col items-end">
+        <article className="flex w-5/12 flex-col items-end max-[1385px]:w-screen max-[1385px]:px-10">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
@@ -125,7 +125,7 @@ const Journey = () => {
             </div>
           </motion.div>
           <motion.div
-            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3"
+            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 "
             variants={divJourneyVariants}
             whileInView="rightVisible"
             initial={{ opacity: 0 }}
@@ -161,7 +161,7 @@ const Journey = () => {
           </motion.div>
         </article>
 
-        <article className="mb-10 flex w-5/12 flex-col ">
+        <article className="max-[1385px]: mb-10 flex w-5/12 flex-col px-10 max-[1385px]:w-screen ">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
@@ -192,7 +192,7 @@ const Journey = () => {
             </div>
           </motion.div>
           <motion.div
-            className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 "
+            className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3  "
             variants={divJourneyVariants}
             whileInView="leftVisible"
             initial={{ opacity: 0 }}
@@ -228,7 +228,7 @@ const Journey = () => {
           </motion.div>
         </article>
 
-        <article className="flex w-5/12 flex-col items-end">
+        <article className="flex w-5/12 flex-col items-end max-[1385px]:w-screen max-[1385px]:px-10">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
@@ -239,7 +239,7 @@ const Journey = () => {
             <div className=" flex h-logoTimelineHeight w-14 translate-y-12 justify-center rounded-3xl bg-lightGrey">
               <motion.img
                 src="/assets/interrogation.png"
-                className="z-10 my-auto h-logoTitleProjectHeight w-10  "
+                className="z-10 my-auto h-logoTitleProjectHeight w-10"
                 whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
@@ -247,7 +247,7 @@ const Journey = () => {
               />
 
               <motion.p
-                className="customPositionDate absolute top-3 text-lightGrey"
+                className="customPositionDate absolute top-3 text-lightGrey "
                 variants={divJourneyVariants}
                 whileInView="rightVisible"
                 initial={{ opacity: 0 }}
