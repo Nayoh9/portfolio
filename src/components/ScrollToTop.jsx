@@ -26,7 +26,7 @@ const ScrollToTop = () => {
       <div
         className={
           isScrollable
-            ? " fixed right-1 top-1/2 flex rotate-90 items-center gap-x-1 font-mont font-semibold text-black opacity-100 transition-all duration-500"
+            ? " fixed right-1 top-1/2 flex rotate-90 items-center gap-x-1 font-mont font-semibold text-black opacity-100 transition-all  duration-500 max-[1380px]:-right-10 "
             : "invisible fixed right-1 top-1/2 flex items-center  gap-x-1  opacity-0 transition-all duration-500 ease-out "
         }
       >

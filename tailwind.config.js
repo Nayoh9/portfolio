@@ -2,11 +2,18 @@
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+
     extend: {
+      screens: {
+        'tablet:': "950px"
+      },
+
       width: {
         divTimelineWidth: "300px",
-        contactBoxWidth: "300px",
-      }, colors: {
+        contactBoxWidth: "400px",
+
+      },
+      colors: {
         "white": "#FFFFFF",
         "black": "#000000",
         "grey": "#808080",
@@ -21,7 +28,7 @@ export default {
         heroBackGround: "url('/assets/cloud-background.jpeg')"
       },
       height: {
-        homeHeight: "80vh",
+        homeHeight: "750px",
         reactLogoHeight: "96px",
         projectDivHeight: "100%",
         imageProjectHeight: "150px",

@@ -38,12 +38,12 @@ const Home = () => {
     >
       <div className="z-00 absolute top-0 h-homeHeight w-full animate-fadeAnim bg-black opacity-50"></div>
 
-      <header className="relative mt-5 flex h-20 w-full animate-fadeHeader items-center justify-between px-32">
+      <header className="relative mt-5 flex h-20 w-full animate-fadeHeader items-center justify-between px-20 max-[800px]:px-10 xl:px-32">
         <p className="font-semibold">
           <span className="text-xl font-extrabold">Y</span>ohann
         </p>
         <nav>
-          <ul className=" flex gap-x-20">
+          <ul className=" flex gap-x-10 xl:gap-x-20">
             <a href="#about">
               <li className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 ">
                 About
