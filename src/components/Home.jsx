@@ -3,6 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from "react";
 import { Typewriter, Cursor } from "react-simple-typewriter";
 
+// Assets import
+import resume from "/assets/CV_ANDRE_YOHANN.pdf";
+
 const Home = () => {
   const [isGearClicked, setIsGearClicked] = useState(false);
   const [counter, setCounter] = useState(0);
@@ -31,28 +34,36 @@ const Home = () => {
           setIsGearClicked(false);
         }
       }}
-      className="mb-40 flex h-homeHeight flex-col bg-heroBackGround bg-cover bg-center font-mont text-white"
+      className="mb-28 flex h-homeHeight flex-col bg-heroBackGround bg-cover bg-center font-mont text-white"
     >
-      <div className=" z-00 absolute top-0 h-homeHeight w-full animate-fadeAnim bg-black opacity-50"></div>
+      <div className="z-00 absolute top-0 h-homeHeight w-full animate-fadeAnim bg-black opacity-50"></div>
 
-      <header className="h-20 relative mt-5 flex w-full animate-fadeHeader items-center justify-between px-32">
+      <header className="relative mt-5 flex h-20 w-full animate-fadeHeader items-center justify-between px-32">
         <p className="font-semibold">
           <span className="text-xl font-extrabold">Y</span>ohann
         </p>
         <nav>
           <ul className=" flex gap-x-20">
-            <li className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 ">
-              About
-            </li>
-            <li className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 ">
-              Projects
-            </li>
-            <li className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 ">
-              Journey
-            </li>
-            <li className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 ">
-              Contact
-            </li>
+            <a href="#about">
+              <li className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 ">
+                About
+              </li>
+            </a>
+            <a href="#projects">
+              <li className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 ">
+                Projects
+              </li>
+            </a>
+            <a href="#journey">
+              <li className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 ">
+                Journey
+              </li>
+            </a>
+            <a href="#contact">
+              <li className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 ">
+                Contact
+              </li>
+            </a>
           </ul>
         </nav>
       </header>
@@ -82,14 +93,16 @@ const Home = () => {
           </p>
           <img src="/assets/line-white.svg" className="w-10 opacity-60" />
         </div>
-        <button className="animate-fadeHeader rounded-xl bg-white px-5 py-1 text-sm font-semibold text-black transition-all duration-500 ease-linear hover:bg-black hover:text-white">
-          HIRE ME
-        </button>
+        <a href={resume} download="CV_ANDRE_YOHANN.pdf">
+          <button className="animate-fadeHeader rounded-xl bg-white px-5 py-1 text-sm font-semibold text-black transition-all duration-500 ease-linear hover:bg-black hover:text-white">
+            HIRE ME
+          </button>
+        </a>
       </div>
 
       <div className="absolute top-40 z-40 animate-fadeHeader ">
         <div
-          className=" h-6 flex w-6 items-center justify-center rounded-sm bg-white"
+          className=" flex h-6 w-6 items-center justify-center rounded-sm bg-white"
           onClick={handleOpenGearMenu}
         >
           <FontAwesomeIcon
@@ -102,7 +115,7 @@ const Home = () => {
         <div
           className={
             isGearClicked
-              ? "flex flex-col items-center justify-center gap-y-2 transition-all duration-500 ease-out"
+              ? "flex flex-col items-center justify-center gap-y-2  transition-all duration-500 ease-out"
               : "invisible flex -translate-y-5 flex-col items-center justify-center gap-y-2 opacity-0 transition-all duration-500 ease-out"
           }
         >

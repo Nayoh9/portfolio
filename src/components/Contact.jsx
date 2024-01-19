@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Contact = ({ isDelayed, setIsDelayed }) => {
   return (
-    <section className="mb-40 font-mont">
+    <section className="mb-40 pt-12 font-mont" id="contact">
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -21,7 +21,7 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
             whileInView={{ opacity: 1, translateY: 0, scale: [0, 1.2, 1] }}
             transition={{ duration: 1, delay: isDelayed ? 0.2 : 0.2 }}
             viewport={{ once: true }}
-            className="h-contactBoxHeight w-contactBoxWidth border-linkedinColor hover:animate-gigleSocials flex flex-col items-center rounded-md border-2 bg-lightGrey p-10 hover:border-solid  "
+            className="flex h-contactBoxHeight w-contactBoxWidth flex-col items-center rounded-md border-2 border-linkedinColor bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid  "
           >
             <p className="mb-7 text-lg font-semibold">Follow me on Linkedin</p>
             <img
@@ -38,7 +38,7 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
             whileInView={{ opacity: 1, translateY: 0, scale: [0, 1.2, 1] }}
             transition={{ duration: 1, delay: isDelayed ? 0.4 : 0.2 }}
             viewport={{ once: true }}
-            className="h-contactBoxHeight w-contactBoxWidth hover:animate-gigleSocials flex flex-col items-center rounded-md border-2 bg-lightGrey p-10 hover:border-solid "
+            className="flex h-contactBoxHeight w-contactBoxWidth flex-col items-center rounded-md border-2 bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid "
           >
             <p className="mb-7  text-lg font-semibold">Follow me on Github</p>
             <img
@@ -55,7 +55,7 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
             whileInView={{ opacity: 1, translateY: 0, scale: [0, 1.2, 1] }}
             transition={{ duration: 1, delay: isDelayed ? 0.6 : 0.2 }}
             viewport={{ once: true }}
-            className="h-contactBoxHeight w-contactBoxWidth border-gmailColor hover:animate-gigleSocials flex flex-col items-center rounded-md border-2 bg-lightGrey p-10 hover:border-solid "
+            className="flex h-contactBoxHeight w-contactBoxWidth flex-col items-center rounded-md border-2 border-gmailColor bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid "
           >
             <p className="mb-7  text-lg font-semibold">Send me an email</p>
             <img
