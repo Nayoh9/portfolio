@@ -29,7 +29,7 @@ const About = () => {
       className="mb-28 flex w-screen flex-col items-center justify-center pt-12 font-mont"
     >
       <motion.article
-        className=" max-[900px]:flex-end mb-40 flex justify-center gap-x-6"
+        className="mb-40 flex justify-center gap-x-6 max-[600px]:flex-col"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: counter === 1 ? 1 : 0 }}
         transition={{ duration: 2 }}
@@ -38,17 +38,17 @@ const About = () => {
         <img
           src="/assets/photoflouté.jpeg"
           alt="Photo d'un homme sur fond vert"
-          className="w-60 border-4 border-double border-lightGrey object-cover max-[900px]:mb-2 max-[900px]:h-fit max-[900px]:w-40  "
+          className="w-60 border-4 border-double border-lightGrey object-cover max-[900px]:mb-2 max-[900px]:h-fit max-[900px]:w-52 max-[600px]:self-center "
         />
-        <div className=" flex h-fit w-1/2 flex-col">
-          <div className="border-1 flex flex-col border-b border-solid border-lightGrey">
-            <p className=" mb-2 text-lg font-semibold max-[750px]:text-sm">
+        <div className=" flex h-fit w-1/2 flex-col max-[600px]:w-full">
+          <div className="border-1 flex flex-col border-b border-solid border-lightGrey max-[600px]:border-none ">
+            <p className=" mb-2 text-lg font-semibold max-[750px]:text-sm max-[600px]:text-center">
               Hello,
             </p>
-            <h1 className="mb-4 font-semibold max-[750px]:text-sm">
+            <h1 className="mb-4 font-semibold max-[750px]:text-sm max-[600px]:text-center">
               I AM A FULL STACK JUNIOR DEVELOPER
             </h1>
-            <p className=" max-xl:text-sm">
+            <p className="max-xl:text-sm max-[600px]:w-screen max-[600px]:px-10 ">
               I'm Andre Yohann, a 28-year-old full-stack web developer in
               transition. With a passion for crafting exceptional web
               experiences, I specialize in technologies like HTML, CSS,
@@ -57,7 +57,7 @@ const About = () => {
               collaborate on your exciting projects. See you soon!
             </p>
           </div>
-          <div className="flex gap-x-20 max-[900px]:gap-x-1">
+          <div className="flex gap-x-20 max-[900px]:gap-x-1 max-[600px]:justify-center max-[600px]:gap-x-10">
             <div className="mt-4 flex flex-col">
               <div className="flex max-[750px]:flex-col  ">
                 <p className="w-24 min-w-fit font-semibold max-[750px]:text-sm ">
@@ -81,9 +81,11 @@ const About = () => {
                 <p className="w-24 min-w-fit font-semibold max-[750px]:text-sm">
                   EMAIL
                 </p>
-                <p className=" max-xl:text-sm max-[750px]:text-xs  ">
-                  y.andre90000@gmail.com
-                </p>
+                <a href="mailto:y.andre90000@gmail.com">
+                  <p className=" max-xl:text-sm max-[750px]:text-xs  ">
+                    y.andre90000@gmail.com
+                  </p>
+                </a>
               </div>
 
               <div className="flex max-[750px]:flex-col">
@@ -96,14 +98,14 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center max-[600px]:justify-center">
             <a href={resume} className="flex" download="CV_ANDRE_YOHANN.pdf">
-              <button className="mt-10 flex w-fit rounded-2xl bg-black p-2 px-4 text-white">
+              <button className="mt-10 flex w-fit rounded-2xl bg-black p-2 px-4 text-white ">
                 <FontAwesomeIcon
                   icon="fa-solid fa-download"
                   style={{ color: "#ffffff" }}
                 />
-                <p className=" pl-3">DOWNLOAD CV</p>
+                <p className="pl-3 ">DOWNLOAD CV</p>
               </button>
             </a>
           </div>

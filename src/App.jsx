@@ -17,8 +17,8 @@ import {
   faLink,
   faPlay,
   faEnvelope,
-  faArrowUp,
   faArrowLeft,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedinIn,
@@ -37,6 +37,7 @@ library.add(
   faPlay,
   faEnvelope,
   faArrowLeft,
+  faBars,
 );
 
 function App() {
