@@ -38,14 +38,14 @@ const PortfolioProject = ({ setIsDelayed, isDelayed }) => {
         </div>
 
         <div className="my-6 flex justify-center">
-          <a href="https://github.com/Nayoh9?tab=repositories" target="blank">
+          <a href="https://github.com/Nayoh9?tab=repositories">
             <img
               src="/assets/stack portfolio/github_irxfsl.png"
               alt="chat blanc sur fond noir, logo github"
               className="w-10"
             />
           </a>
-          <a href="https://andre-yohann.netlify.app/" target="blank">
+          <a href="https://andre-yohann.netlify.app/">
             <img src="/assets/171454_link_icon.png" alt="" className="w-10" />
           </a>
         </div>
@@ -53,7 +53,6 @@ const PortfolioProject = ({ setIsDelayed, isDelayed }) => {
         <div className="my-6 flex justify-center px-3">
           <a
             href="https://github.com/Nayoh9/portfolio"
-            target="blank"
             className=" transition-all hover:scale-110 hover:font-semibold"
           >
             Front-end

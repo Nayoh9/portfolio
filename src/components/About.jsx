@@ -124,86 +124,77 @@ const About = () => {
             <p className="mb-4 text-xl font-semibold">My Stack</p>
 
             <div className="flex w-5/6  flex-wrap items-center justify-center gap-x-3">
-              <a
-                href="https://developer.mozilla.org/fr/docs/Glossary/HTML5"
-                target="blank"
-              >
+              <a href="https://developer.mozilla.org/fr/docs/Glossary/HTML5">
                 <img
                   src="/assets/stack portfolio/html-92b76a73.png"
                   alt="symbole HTML blanc sur fond orange"
                   className="w-24 transition-all hover:scale-125 max-[600px]:w-14"
                 />
               </a>
-              <a
-                href="https://developer.mozilla.org/fr/docs/Web/CSS"
-                target="blank"
-              >
+              <a href="https://developer.mozilla.org/fr/docs/Web/CSS">
                 <img
                   src="/assets/stack portfolio/css-79a7f026.png"
                   className="w-24 transition-all hover:scale-125 max-[600px]:w-14"
                   alt="image representant un symbole css blanc sur fond bleu  "
                 />
               </a>
-              <a
-                href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
-                target="blank"
-              >
+              <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">
                 <img
                   src="/assets/stack portfolio/js.png"
                   alt="lettre JS de Javascript écrit en noir sur fond jaune"
                   className="w-24 transition-all hover:scale-125 max-[600px]:w-14"
                 />
               </a>
-              <a href="https://expressjs.com/fr/" target="blank">
+              <a href="https://expressjs.com/fr/">
                 <img
                   src="/assets/stack portfolio/express.png"
                   alt="Lettre E et X represantant express.js"
                   className="w-24 transition-all hover:scale-125 max-[600px]:w-14"
                 />
               </a>
-              <a href="https://tailwindcss.com/" target="blank">
+              <a href="https://tailwindcss.com/">
                 <img
                   src="/assets/stack portfolio/tailwind-6ece120d.png"
                   alt="Deux traits bleus qui representent le logo tailwind"
                   className="w-24 transition-all hover:scale-125 max-[600px]:w-14"
                 />
               </a>
-              <a href="https://nodejs.org/en" target="blank">
+              <a href="https://nodejs.org/en">
                 <img
                   src="/assets/stack portfolio/nodejs-d83eb6dd.png"
                   alt="symbole node JS écrit en vert"
                   className="w-24 transition-all hover:scale-125 max-[600px]:w-14"
                 />
               </a>
-              <a href="https://reactnative.dev/" target="blank">
+              <a href="https://reactnative.dev/">
                 <img
                   src="/assets/stack portfolio/reactNative-6e0e6bbf.png"
                   alt="logo react native"
                   className="w-24 transition-all hover:scale-125 max-[600px]:w-14"
                 />
               </a>
-              <a href="https://react.dev/" target="blank">
+              <a href="https://react.dev/">
                 <img
                   src="/assets/stack portfolio/reactjs-19291084.png"
                   alt="Logo react"
                   className="reactLogoHeight w-24 transition-all hover:scale-125 max-[600px]:h-14 max-[600px]:w-14"
                 />
               </a>
-              <a href="https://www.mongodb.com/fr-fr" target="blank">
+              <a href="https://www.mongodb.com/fr-fr">
                 <img
                   src="/assets/stack portfolio/mongodb-54000b2b.png"
                   alt="une feuille au millieu d'un écusson representant le logo mongoDB"
                   className="w-24 transition-all hover:scale-125 max-[600px]:w-14"
                 />
               </a>
-              <a href="https://git-scm.com/" target="blank">
+              <a href="https://git-scm.com/">
                 <img
                   src="/assets/stack portfolio/git.png"
                   alt="logo git transparent sur fond orange"
                   className="w-24 transition-all hover:scale-125 max-[600px]:w-14"
                 />
               </a>
-              <a href="https://github.com/Nayoh9" target="blank">
+              <a href="https://github.com/Nayoh9">
                 <img
                   src="/assets/stack portfolio/github_irxfsl.png"
                   alt="Chat transparent sur fond blanc representant le logo github"
