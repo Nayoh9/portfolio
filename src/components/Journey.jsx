@@ -1,6 +1,7 @@
 // Package import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const divJourneyVariants = {
   leftVisible: {
@@ -14,6 +15,18 @@ const divJourneyVariants = {
 };
 
 const Journey = () => {
+  const [datesBelow, setDatesBelow] = useState(false);
+
+  const checkWindow = () => {
+    if (window.innerWidth <= 600) {
+      setDatesBelow(true);
+    } else {
+      setDatesBelow(false);
+    }
+  };
+
+  window.onresize = checkWindow;
+
   return (
     <main className="mb-28 flex flex-col pt-12 font-mont" id="journey">
       <motion.h1
@@ -26,13 +39,13 @@ const Journey = () => {
         My Journey
       </motion.h1>
 
-      <section className="timeline px- relative flex flex-col items-center gap-y-16">
-        <article className=" flex w-5/12 flex-col max-[1385px]:w-screen max-[1385px]:px-10 ">
+      <section className="timeline relative flex flex-col items-center gap-y-16 max-[600px]:items-start">
+        <article className=" flex w-5/12 flex-col max-[1385px]:w-screen max-[1385px]:px-10 max-[600px]:pl-1 ">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="max-[1385px]: z-10 flex w-full justify-center"
+            className="max-[1385px]: z-10 flex w-full justify-center max-[600px]:justify-start"
             viewport={{ once: true }}
           >
             <div className="relative flex h-logoTimelineHeight w-14 translate-y-12  justify-center rounded-3xl bg-lightGrey">
@@ -46,7 +59,7 @@ const Journey = () => {
               />
 
               <motion.p
-                className=" text-lightGre absolute -right-24 top-3"
+                className=" absolute -right-24 top-3 text-lightGrey  max-[600px]:hidden"
                 variants={divJourneyVariants}
                 whileInView="leftVisible"
                 initial={{ opacity: 0 }}
@@ -58,11 +71,13 @@ const Journey = () => {
             </div>
           </motion.div>
 
-          <div className="flex justify-between">
+          <div className="flex max-[600px]:justify-end">
             <motion.div
-              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3  "
+              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12  "
               variants={divJourneyVariants}
-              whileInView="leftVisible"
+              whileInView={
+                window.innerWidth <= 600 ? "rightVisible" : "leftVisible"
+              }
               initial={{ opacity: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
@@ -85,22 +100,27 @@ const Journey = () => {
                 relations skills, a great deal of precision, and a deep respect
                 for protocols.
               </p>
+              {datesBelow ? (
+                <p className="text-sm font-semibold ">2013 - 2022</p>
+              ) : (
+                ""
+              )}
 
               <FontAwesomeIcon
                 icon="fa-solid fa-play"
                 style={{ color: "#D3D3D3" }}
-                className="absolute -right-2 top-4"
+                className="absolute -right-2 top-4 max-[600px]:-left-2 max-[600px]:rotate-180"
               />
             </motion.div>
           </div>
         </article>
 
-        <article className="flex w-5/12 flex-col items-end max-[1385px]:w-screen max-[1385px]:px-10">
+        <article className="flex w-5/12 flex-col items-end max-[1385px]:w-screen max-[1385px]:px-10 max-[600px]:pl-1">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="  z-10 flex w-full justify-center "
+            className="  z-10 flex w-full justify-center max-[600px]:justify-start "
             viewport={{ once: true }}
           >
             <div className=" flex h-logoTimelineHeight w-14 translate-y-12 justify-center rounded-3xl bg-lightGrey">
@@ -113,7 +133,7 @@ const Journey = () => {
                 viewport={{ once: true }}
               />
               <motion.p
-                className="absolute -left-24 top-3 text-lightGrey"
+                className="absolute -left-24 top-3 text-lightGrey  max-[600px]:hidden"
                 variants={divJourneyVariants}
                 whileInView="rightVisible"
                 initial={{ opacity: 0 }}
@@ -125,7 +145,7 @@ const Journey = () => {
             </div>
           </motion.div>
           <motion.div
-            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 "
+            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12 "
             variants={divJourneyVariants}
             whileInView="rightVisible"
             initial={{ opacity: 0 }}
@@ -153,6 +173,12 @@ const Journey = () => {
               on my own.
             </p>
 
+            {datesBelow ? (
+              <p className="text-sm font-semibold">2022 - 2023</p>
+            ) : (
+              ""
+            )}
+
             <FontAwesomeIcon
               icon="fa-solid fa-play"
               style={{ color: "#D3D3D3" }}
@@ -161,15 +187,15 @@ const Journey = () => {
           </motion.div>
         </article>
 
-        <article className="max-[1385px]: mb-10 flex w-5/12 flex-col px-10 max-[1385px]:w-screen ">
+        <article className="flex w-5/12 flex-col max-[1385px]:w-screen max-[1385px]:px-10 max-[600px]:pl-1  ">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="  z-10 flex w-full justify-center"
+            className="  z-10 flex w-full justify-center max-[600px]:justify-start "
             viewport={{ once: true }}
           >
-            <div className="flex h-logoTimelineHeight w-14 translate-y-12  justify-center rounded-3xl bg-lightGrey">
+            <div className="flex h-logoTimelineHeight w-14 translate-y-12 justify-center  rounded-3xl bg-lightGrey  ">
               <motion.img
                 src="/assets/reacteurLogo.jpeg"
                 className=" relative my-auto h-reacteurHeight w-8 rounded-full "
@@ -180,7 +206,7 @@ const Journey = () => {
               />
 
               <motion.p
-                className="customPositionOct absolute -right-28 top-3  text-lightGrey"
+                className="customPositionOct absolute -right-28 top-3  text-lightGrey max-[600px]:hidden"
                 variants={divJourneyVariants}
                 whileInView="leftVisible"
                 initial={{ opacity: 0 }}
@@ -191,49 +217,59 @@ const Journey = () => {
               </motion.p>
             </div>
           </motion.div>
-          <motion.div
-            className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3  "
-            variants={divJourneyVariants}
-            whileInView="leftVisible"
-            initial={{ opacity: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            <h2 className=" text-xl font-semibold">Programming Training</h2>
+          <div className="flex max-[600px]:justify-end">
+            <motion.div
+              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12 "
+              variants={divJourneyVariants}
+              whileInView={
+                window.innerWidth <= 600 ? "rightVisible" : "leftVisible"
+              }
+              initial={{ opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <h2 className=" text-xl font-semibold">Programming Training</h2>
 
-            <p className="text-sm">
-              After gaining knowledge in HTML, CSS, and JavaScript, I reached a
-              point where I felt stuck. I didn't know which framework to learn
-              or how the back-end and a database worked. After some research, I
-              decided to self-fund an intensive 2-month training.
-            </p>
-            <p className="text-sm">
-              During this training, I learned to use NodeJS, React, and React
-              Native. I acquired skills in installing packages, using the
-              terminal, and all those things that used to intimidate me when I
-              didn't know them.
-            </p>
-            <p className="text-sm">
-              What also motivated me to pursue this training is that, after
-              completing a 6-month internship in your company, I will be able to
-              obtain an RNCP qualification equivalent to a bachelor's degree,
-              providing me with credibility in the professional world.
-            </p>
+              <p className="text-sm">
+                After gaining knowledge in HTML, CSS, and JavaScript, I reached
+                a point where I felt stuck. I didn't know which framework to
+                learn or how the back-end and a database worked. After some
+                research, I decided to self-fund an intensive 2-month training.
+              </p>
+              <p className="text-sm">
+                During this training, I learned to use NodeJS, React, and React
+                Native. I acquired skills in installing packages, using the
+                terminal, and all those things that used to intimidate me when I
+                didn't know them.
+              </p>
+              <p className="text-sm">
+                What also motivated me to pursue this training is that, after
+                completing a 6-month internship in your company, I will be able
+                to obtain an RNCP qualification equivalent to a bachelor's
+                degree, providing me with credibility in the professional world.
+              </p>
 
-            <FontAwesomeIcon
-              icon="fa-solid fa-play"
-              style={{ color: "#D3D3D3" }}
-              className="absolute -right-2 top-4"
-            />
-          </motion.div>
+              {datesBelow ? (
+                <p className="text-sm font-semibold"> Oct 2023 - Dec 2023</p>
+              ) : (
+                ""
+              )}
+
+              <FontAwesomeIcon
+                icon="fa-solid fa-play"
+                style={{ color: "#D3D3D3" }}
+                className="absolute -right-2 top-4 max-[600px]:-left-2 max-[600px]:rotate-180"
+              />
+            </motion.div>
+          </div>
         </article>
 
-        <article className="flex w-5/12 flex-col items-end max-[1385px]:w-screen max-[1385px]:px-10">
+        <article className="flex w-5/12 flex-col items-end max-[1385px]:w-screen max-[1385px]:px-10 max-[600px]:pl-1">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="  z-10 flex w-full justify-center "
+            className="  z-10 flex w-full justify-center max-[600px]:justify-start "
             viewport={{ once: true }}
           >
             <div className=" flex h-logoTimelineHeight w-14 translate-y-12 justify-center rounded-3xl bg-lightGrey">
@@ -247,7 +283,7 @@ const Journey = () => {
               />
 
               <motion.p
-                className="customPositionDate absolute top-3 text-lightGrey "
+                className="customPositionDate absolute top-3 text-lightGrey max-[600px]:hidden"
                 variants={divJourneyVariants}
                 whileInView="rightVisible"
                 initial={{ opacity: 0 }}
@@ -259,7 +295,7 @@ const Journey = () => {
             </div>
           </motion.div>
           <motion.div
-            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3"
+            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12"
             variants={divJourneyVariants}
             whileInView="rightVisible"
             initial={{ opacity: 0 }}
@@ -275,6 +311,8 @@ const Journey = () => {
             <p className="text-lm font-semibold">
               On my way to new challenges!
             </p>
+
+            {datesBelow ? <p className="text-sm font-semibold"> Date()</p> : ""}
 
             <FontAwesomeIcon
               icon="fa-solid fa-play"

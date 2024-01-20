@@ -14,14 +14,14 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
         Contact Me
       </motion.h1>
 
-      <div className=" flex flex-wrap justify-center gap-28 max-[1125px]:flex-col max-[1125px]:items-center">
+      <div className=" flex flex-wrap justify-center gap-28 max-[1125px]:flex-col max-[1125px]:items-center ">
         <a href="https://www.linkedin.com/in/yohann-andr%C3%A9/" target="blank">
           <motion.div
             initial={{ opacity: 1, translateY: "100px" }}
             whileInView={{ opacity: 1, translateY: 0, scale: [0, 1.2, 1] }}
             transition={{ duration: 1, delay: isDelayed ? 0.2 : 0.2 }}
             viewport={{ once: true }}
-            className=" flex h-contactBoxHeight w-80 flex-col items-center rounded-md border-2 border-linkedinColor bg-lightGrey p-10 hover:animate-gigleSocials  hover:border-solid max-[1125px]:w-contactBoxWidth"
+            className=" flex h-contactBoxHeight w-80 flex-1 flex-col items-center rounded-md border-2 border-linkedinColor bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid  max-[1125px]:w-contactBoxWidth max-[600px]:w-80"
           >
             <p className="mb-7 text-lg font-semibold">Follow me on Linkedin</p>
             <img
@@ -38,7 +38,7 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
             whileInView={{ opacity: 1, translateY: 0, scale: [0, 1.2, 1] }}
             transition={{ duration: 1, delay: isDelayed ? 0.4 : 0.2 }}
             viewport={{ once: true }}
-            className=": flex h-contactBoxHeight w-80  flex-col items-center rounded-md border-2 bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid max-[1125px]:w-contactBoxWidth "
+            className=": flex h-contactBoxHeight w-80  flex-col items-center rounded-md border-2 bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid max-[1125px]:w-contactBoxWidth max-[600px]:w-80"
           >
             <p className="mb-7 text-lg font-semibold">Follow me on Github</p>
             <img
@@ -55,7 +55,7 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
             whileInView={{ opacity: 1, translateY: 0, scale: [0, 1.2, 1] }}
             transition={{ duration: 1, delay: isDelayed ? 0.6 : 0.2 }}
             viewport={{ once: true }}
-            className=" flex h-contactBoxHeight w-80 flex-col items-center rounded-md border-2 border-gmailColor bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid max-[1125px]:w-contactBoxWidth "
+            className=" flex h-contactBoxHeight w-80 flex-col items-center rounded-md border-2 border-gmailColor bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid max-[1125px]:w-contactBoxWidth max-[600px]:w-80 "
           >
             <p className="mb-7  text-lg font-semibold">Send me an email</p>
             <img
