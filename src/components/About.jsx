@@ -57,7 +57,7 @@ const About = () => {
               collaborate on your exciting projects. See you soon!
             </p>
           </div>
-          <div className="flex gap-x-20 max-[900px]:gap-x-1 max-[600px]:gap-x-10 max-[600px]:pl-3">
+          <div className="flex gap-x-20 max-[900px]:gap-x-1 max-[600px]:gap-x-10 max-[600px]:pl-5">
             <div className="mt-4 flex flex-col">
               <div className="flex max-[750px]:flex-col  ">
                 <p className="w-24 min-w-fit font-semibold max-[750px]:text-sm ">
