@@ -38,14 +38,14 @@ const MarvelProject = ({ setIsDelayed, isDelayed }) => {
         </div>
 
         <div className="my-6 flex justify-center">
-          <a href="https://github.com/Nayoh9?tab=repositories" target="blank">
+          <a href="https://github.com/Nayoh9?tab=repositories">
             <img
               src="/assets/stack portfolio/github_irxfsl.png"
               alt="chat blanc sur fond noir, logo github"
               className="w-10"
             />
           </a>
-          <a href="https://marvel-universe-9.netlify.app/" target="blank">
+          <a href="https://marvel-universe-9.netlify.app/">
             <img src="/assets/171454_link_icon.png" alt="" className="w-10" />
           </a>
         </div>
@@ -53,14 +53,12 @@ const MarvelProject = ({ setIsDelayed, isDelayed }) => {
         <div className=" my-6 flex justify-center gap-x-5">
           <a
             href="https://github.com/Nayoh9/marvel-frontend"
-            target="blank"
             className=" transition-all hover:scale-110 hover:font-semibold"
           >
             Front-end
           </a>
           <a
             href="https://github.com/Nayoh9/marvel-backend"
-            target="blank"
             className=" transition-all hover:scale-110 hover:font-semibold"
           >
             Back-end

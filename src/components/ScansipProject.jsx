@@ -42,17 +42,17 @@ const ScansipProject = ({ setIsDelayed, isDelayed }) => {
         </div>
 
         <div className="my-6 flex justify-center">
-          <a href="https://github.com/Nayoh9?tab=repositories" target="blank">
+          <a href="https://github.com/Nayoh9?tab=repositories">
             <img
               src="/assets/stack portfolio/github_irxfsl.png"
               alt="chat blanc sur fond noir, logo github"
               className="w-10"
             />
           </a>
-          <a href="https://scansip.netlify.app/" target="blank">
+          <a href="https://scansip.netlify.app/">
             <img src="/assets/171454_link_icon.png" alt="" className="w-10" />
           </a>
-          <a href="https://scansip.netlify.app/admin/signin" target="blank">
+          <a href="https://scansip.netlify.app/admin/signin">
             <img src="/assets/171454_link_icon.png" alt="" className="w-10" />
           </a>
         </div>
@@ -60,21 +60,18 @@ const ScansipProject = ({ setIsDelayed, isDelayed }) => {
         <div className="my-6 flex justify-center px-3">
           <a
             href="https://github.com/ScanSip-Project-Team/scansip-frontend"
-            target="blank"
             className=" transition-all hover:scale-110 hover:font-semibold"
           >
             Front (client)
           </a>
           <a
             href="https://github.com/ScanSip-Project-Team/scansip-admin"
-            target="blank"
             className=" transition-all hover:scale-110 hover:font-semibold"
           >
             Front (admin)
           </a>
           <a
             href="https://github.com/ScanSip-Project-Team/scansip-backend"
-            target="blank"
             className=" transition-all hover:scale-110 hover:font-semibold"
           >
             Back-end
