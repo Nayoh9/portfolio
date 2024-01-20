@@ -9,6 +9,7 @@ import resume from "/assets/CV_ANDRE_YOHANN.pdf";
 const Home = () => {
   const [isGearClicked, setIsGearClicked] = useState(false);
   const [counter, setCounter] = useState(0);
+  const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
 
   const handleOpenGearMenu = () => {
     isGearClicked ? setIsGearClicked(false) : setIsGearClicked(true);
@@ -38,36 +39,67 @@ const Home = () => {
     >
       <div className="z-00 absolute top-0 h-homeHeight w-full animate-fadeAnim bg-black opacity-50"></div>
 
-      <header className="relative mt-5 flex h-20 w-full animate-fadeHeader items-center justify-between px-20 max-[800px]:px-10 xl:px-32">
+      <header className="z-20 mt-5 flex h-20 w-full animate-fadeHeader items-center justify-between px-20 max-[800px]:px-10 xl:px-32">
         <p className="font-semibold">
           <span className="text-xl font-extrabold">Y</span>ohann
         </p>
-        <nav>
-          <ul className=" flex gap-x-10 xl:gap-x-20">
+
+        <FontAwesomeIcon
+          icon="fa-solid fa-bars"
+          style={{ color: "#ffffff" }}
+          className=" hidden h-8 max-[700px]:block"
+          onClick={() => {
+            if (isHamburgerClicked) {
+              setIsHamburgerClicked(false);
+            } else {
+              setIsHamburgerClicked(true);
+            }
+          }}
+        />
+        <nav className="right-10 top-24  max-[700px]:absolute max-[700px]:rounded-md max-[700px]:bg-black">
+          <ul
+            className={
+              isHamburgerClicked
+                ? "flex gap-x-10  max-[700px]:w-40 max-[700px]:flex-col max-[700px]:items-center max-[700px]:gap-y-2 max-[700px]:p-2 xl:gap-x-20"
+                : "flex gap-x-10 max-[700px]:hidden xl:gap-x-20"
+            }
+          >
             <a href="#about">
-              <li className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 ">
+              <li
+                className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+                onClick={() => setIsHamburgerClicked(false)}
+              >
                 About
               </li>
             </a>
             <a href="#projects">
-              <li className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 ">
+              <li
+                className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+                onClick={() => setIsHamburgerClicked(false)}
+              >
                 Projects
               </li>
             </a>
             <a href="#journey">
-              <li className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 ">
+              <li
+                className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 "
+                onClick={() => setIsHamburgerClicked(false)}
+              >
                 Journey
               </li>
             </a>
             <a href="#contact">
-              <li className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 ">
+              <li
+                className="relative block w-fit after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-white after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 "
+                onClick={() => setIsHamburgerClicked(false)}
+              >
                 Contact
               </li>
             </a>
           </ul>
         </nav>
       </header>
-      <div className="z-30 flex h-homeHeight w-full flex-col items-center justify-center gap-3 text-center">
+      <div className="z-10 flex h-homeHeight w-full flex-col items-center justify-center gap-3 text-center">
         <p className="text-xl font-semibold opacity-70">
           {counter >= 3 && <Typewriter words={["Hello,"]} typeSpeed={100} />}
           {counter === 3 && <Cursor />}
