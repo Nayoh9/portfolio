@@ -34,6 +34,10 @@ const Home = () => {
         if (isGearClicked) {
           setIsGearClicked(false);
         }
+
+        if (isHamburgerClicked) {
+          setIsHamburgerClicked(false);
+        }
       }}
       className="mb-28 flex h-homeHeight flex-col bg-heroBackGround bg-cover bg-center font-mont text-white"
     >
@@ -44,24 +48,33 @@ const Home = () => {
           <span className="text-xl font-extrabold">Y</span>ohann
         </p>
 
-        <FontAwesomeIcon
-          icon="fa-solid fa-bars"
-          style={{ color: "#ffffff" }}
-          className=" hidden h-8 max-[700px]:block"
-          onClick={() => {
-            if (isHamburgerClicked) {
-              setIsHamburgerClicked(false);
-            } else {
-              setIsHamburgerClicked(true);
-            }
-          }}
-        />
-        <nav className="right-10 top-24  max-[700px]:absolute max-[700px]:rounded-md max-[700px]:bg-black">
+        {isHamburgerClicked ? (
+          <FontAwesomeIcon
+            icon="fa-solid fa-xmark"
+            style={{ color: "#ffffff" }}
+            className=" hidden h-8 max-[700px]:block"
+          />
+        ) : (
+          <FontAwesomeIcon
+            icon="fa-solid fa-bars"
+            style={{ color: "#ffffff" }}
+            className=" hidden h-8 max-[700px]:block"
+            onClick={() => {
+              if (isHamburgerClicked) {
+                setIsHamburgerClicked(false);
+              } else {
+                setIsHamburgerClicked(true);
+              }
+            }}
+          />
+        )}
+
+        <nav className="right-10 top-24  max-[700px]:absolute max-[700px]:rounded-md ">
           <ul
             className={
               isHamburgerClicked
-                ? "flex gap-x-10  max-[700px]:w-40 max-[700px]:flex-col max-[700px]:items-center max-[700px]:gap-y-2 max-[700px]:p-2 xl:gap-x-20"
-                : "flex gap-x-10 max-[700px]:hidden xl:gap-x-20"
+                ? "flex gap-x-10 rounded-md  transition-all duration-500 max-[700px]:w-40 max-[700px]:flex-col max-[700px]:items-center max-[700px]:gap-y-2 max-[700px]:bg-black max-[700px]:p-2 xl:gap-x-20"
+                : "max-[700px]:invisible max-[700px]:opacity-0 min-[700px]:flex  min-[700px]:gap-x-10 xl:gap-x-20"
             }
           >
             <a href="#about">

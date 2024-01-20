@@ -6,18 +6,25 @@ html {
   scroll-behavior: smooth;
 }
 
-.timeline::after {
-  content: "";
-  width: 4px;
-  height: 100%;
-  background-color: lightgray;
-  position: absolute;
-}
-
 .customPositionOct {
   right: -170px;
 }
 
 .customPositionDate {
   left: -60px;
+}
+
+.timeline::after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background-color: lightgrey;
+  position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    background-color: lightgrey;
+    left: 30px;
+  }
 }

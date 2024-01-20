@@ -10,7 +10,7 @@ const PortfolioProject = ({ setIsDelayed, isDelayed }) => {
       viewport={{ once: true }}
       className="flex h-projectDivHeight justify-center"
     >
-      <div className="w-96 rounded-md bg-lightGrey py-6">
+      <div className="w-96 rounded-md bg-lightGrey py-6 max-[860px]:w-3/5 max-[600px]:w-4/5">
         <img
           src="/assets/logoy.svg"
           alt="Scan Sip écrit en blanc et vert sur fond noir"
@@ -50,7 +50,7 @@ const PortfolioProject = ({ setIsDelayed, isDelayed }) => {
           </a>
         </div>
 
-        <div className="my-6 flex justify-center gap-x-3">
+        <div className="my-6 flex justify-center px-3">
           <a
             href="https://github.com/Nayoh9/portfolio"
             target="blank"
