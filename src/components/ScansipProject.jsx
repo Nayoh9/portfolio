@@ -57,7 +57,7 @@ const ScansipProject = ({ setIsDelayed, isDelayed }) => {
           </a>
         </div>
 
-        <div className="my-6 flex justify-center px-3">
+        <div className="my-6 flex justify-center gap-x-4 px-5">
           <a
             href="https://github.com/ScanSip-Project-Team/scansip-frontend"
             className=" transition-all hover:scale-110 hover:font-semibold"

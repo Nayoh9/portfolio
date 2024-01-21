@@ -10,7 +10,7 @@ const MarvelProject = ({ setIsDelayed, isDelayed }) => {
       viewport={{ once: true }}
       className="flex h-projectDivHeight justify-center"
     >
-      <div className=" max-[860px]:w-/5 w-96 rounded-md bg-lightGrey py-6 max-[600px]:w-4/5">
+      <div className=" w-96 rounded-md bg-lightGrey py-6 max-[860px]:w-3/5 max-[600px]:w-4/5">
         <img
           src="/assets/marvel-logo_pgsubf.svg"
           alt="Marvel écrit en blanc sur fond rouge"
