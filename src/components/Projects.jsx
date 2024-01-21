@@ -15,7 +15,7 @@ const Projects = ({ isDelayed, setIsDelayed }) => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2 }}
         viewport={{ once: true }}
-        className="mb-20 text-center text-2xl font-semibold"
+        className="mb-20 text-center text-2xl font-semibold dark:text-white"
       >
         My Projects
       </motion.h1>
