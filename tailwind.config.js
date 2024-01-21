@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
+  darkMode: 'class',
 
+  theme: {
     extend: {
       screens: {
         'tablet:': "950px"
@@ -14,9 +15,6 @@ export default {
 
       },
       colors: {
-        "white": "#FFFFFF",
-        "black": "#000000",
-        "grey": "#808080",
         "lightGrey": "#D3D3D3",
         "linkedinColor": "#007FBC",
         "gmailColor": "#C6221F"
@@ -40,6 +38,7 @@ export default {
       minHeight: {
         timeLineHeight: "1500px"
       },
+
 
 
 

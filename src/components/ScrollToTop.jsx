@@ -32,10 +32,9 @@ const ScrollToTop = () => {
       >
         <FontAwesomeIcon
           icon="fa-solid fa-arrow-left"
-          style={{ color: "#000000" }}
-          className=" animate-scrollToTop"
+          className="icon animate-scrollToTop "
         />
-        <p className=" animate-scrollToTop"> Scroll to top</p>
+        <p className=" animate-scrollToTop dark:text-white"> Scroll to top</p>
       </div>
     </a>
   );

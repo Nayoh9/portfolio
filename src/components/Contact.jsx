@@ -21,9 +21,11 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
             whileInView={{ opacity: 1, translateY: 0, scale: [0, 1.2, 1] }}
             transition={{ duration: 1, delay: isDelayed ? 0.2 : 0.2 }}
             viewport={{ once: true }}
-            className=" flex h-contactBoxHeight w-80 flex-1 flex-col items-center rounded-md border-2 border-linkedinColor bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid  max-[1125px]:w-contactBoxWidth max-[600px]:w-80"
+            className=" flex h-contactBoxHeight w-80 flex-1 flex-col items-center rounded-md border-2 border-linkedinColor bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid max-[1125px]:w-contactBoxWidth  max-[600px]:w-80 dark:bg-gray-900"
           >
-            <p className="mb-7 text-lg font-semibold">Follow me on Linkedin</p>
+            <p className="mb-7 text-lg font-semibold dark:text-white">
+              Follow me on Linkedin
+            </p>
             <img
               src="/assets/LinkedIn_icon.svg_ywrjtt.png"
               alt="logo linkedin"
@@ -38,9 +40,11 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
             whileInView={{ opacity: 1, translateY: 0, scale: [0, 1.2, 1] }}
             transition={{ duration: 1, delay: isDelayed ? 0.4 : 0.2 }}
             viewport={{ once: true }}
-            className=": flex h-contactBoxHeight w-80  flex-col items-center rounded-md border-2 bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid max-[1125px]:w-contactBoxWidth max-[600px]:w-80"
+            className=": flex h-contactBoxHeight w-80  flex-col items-center rounded-md border-2 bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid max-[1125px]:w-contactBoxWidth max-[600px]:w-80 dark:bg-gray-900"
           >
-            <p className="mb-7 text-lg font-semibold">Follow me on Github</p>
+            <p className="mb-7 text-lg font-semibold dark:text-white">
+              Follow me on Github
+            </p>
             <img
               src="/assets/stack portfolio/github_irxfsl.png"
               alt="chat blanc sur fond noir representant le logo github "
@@ -55,9 +59,11 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
             whileInView={{ opacity: 1, translateY: 0, scale: [0, 1.2, 1] }}
             transition={{ duration: 1, delay: isDelayed ? 0.6 : 0.2 }}
             viewport={{ once: true }}
-            className=" flex h-contactBoxHeight w-80 flex-col items-center rounded-md border-2 border-gmailColor bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid max-[1125px]:w-contactBoxWidth max-[600px]:w-80 "
+            className=" flex h-contactBoxHeight w-80 flex-col items-center rounded-md border-2 border-gmailColor bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid max-[1125px]:w-contactBoxWidth max-[600px]:w-80 dark:bg-gray-900 "
           >
-            <p className="mb-7  text-lg font-semibold">Send me an email</p>
+            <p className="mb-7  text-lg font-semibold dark:text-white">
+              Send me an email
+            </p>
             <img
               src="/assets/gmailIcon.svg"
               alt="chat blanc sur fond noir representant le logo github "
