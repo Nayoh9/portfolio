@@ -1,4 +1,5 @@
 // Package import
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
 const ScansipProject = ({ setIsDelayed, isDelayed }) => {
@@ -10,7 +11,7 @@ const ScansipProject = ({ setIsDelayed, isDelayed }) => {
       viewport={{ once: true }}
       className="flex h-projectDivHeight justify-center"
     >
-      <div className="w-96 rounded-md bg-lightGrey py-6 max-[860px]:w-3/5 max-[600px]:w-4/5  dark:bg-gray-900 dark:text-white">
+      <div className="w-96 rounded-md bg-lightGrey py-6 dark:bg-gray-900 dark:text-white  max-[860px]:w-3/5 max-[600px]:w-4/5">
         <img
           src="/assets/scansip.svg"
           alt="Scan Sip écrit en blanc et vert sur fond noir"
@@ -41,7 +42,7 @@ const ScansipProject = ({ setIsDelayed, isDelayed }) => {
           </p>
         </div>
 
-        <div className="my-6 flex justify-center">
+        <div className="my-6 flex justify-center gap-x-1">
           <a href="https://github.com/Nayoh9?tab=repositories">
             <img
               src="/assets/stack portfolio/github_irxfsl.png"
@@ -50,10 +51,16 @@ const ScansipProject = ({ setIsDelayed, isDelayed }) => {
             />
           </a>
           <a href="https://scansip.netlify.app/">
-            <img src="/assets/171454_link_icon.png" alt="" className="w-10" />
+            <FontAwesomeIcon
+              icon="fa-solid fa-link"
+              className=" h-10 w-10 rotate-12 text-black dark:text-white"
+            />
           </a>
           <a href="https://scansip.netlify.app/admin/signin">
-            <img src="/assets/171454_link_icon.png" alt="" className="w-10" />
+            <FontAwesomeIcon
+              icon="fa-solid fa-link"
+              className=" h-10 w-10 rotate-12 text-black dark:text-white"
+            />
           </a>
         </div>
 

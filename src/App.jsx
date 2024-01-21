@@ -42,6 +42,7 @@ library.add(
   faBars,
   faXmark,
   faMoon,
+  faLink,
 );
 
 function App() {
