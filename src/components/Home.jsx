@@ -56,10 +56,13 @@ const Home = () => {
       <div className="z-00 absolute top-0 h-homeHeight w-full animate-fadeAnim bg-black opacity-50"></div>
 
       <div
-        className="absolute top-28 z-20 flex h-6 w-6 animate-fadeHeader items-center justify-center rounded-sm bg-white"
+        className="absolute top-28 z-20 flex h-6 w-6 animate-fadeHeader items-center justify-center rounded-sm bg-white dark:bg-black"
         onClick={toggleTheme}
       >
-        <FontAwesomeIcon icon="fa-solid fa-moon" style={{ color: "#000000" }} />
+        <FontAwesomeIcon
+          icon="fa-solid fa-moon"
+          className="text-black dark:text-yellow-500"
+        />
       </div>
 
       <header className="z-20 mt-5 flex h-20 w-full animate-fadeHeader items-center justify-between px-20 max-[800px]:px-10 xl:px-32">

@@ -9,7 +9,7 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2 }}
         viewport={{ once: true }}
-        className="mb-20 text-center text-2xl font-semibold"
+        className="mb-20 text-center text-2xl font-semibold dark:text-white"
       >
         Contact Me
       </motion.h1>
@@ -21,7 +21,7 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
             whileInView={{ opacity: 1, translateY: 0, scale: [0, 1.2, 1] }}
             transition={{ duration: 1, delay: isDelayed ? 0.2 : 0.2 }}
             viewport={{ once: true }}
-            className=" flex h-contactBoxHeight w-80 flex-1 flex-col items-center rounded-md border-2 border-linkedinColor bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid max-[1125px]:w-contactBoxWidth  max-[600px]:w-80 dark:bg-gray-900"
+            className=" flex h-contactBoxHeight w-80 flex-1 flex-col items-center rounded-md border-2 border-linkedinColor bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid dark:bg-gray-900  max-[1125px]:w-contactBoxWidth max-[600px]:w-80"
           >
             <p className="mb-7 text-lg font-semibold dark:text-white">
               Follow me on Linkedin
@@ -40,7 +40,7 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
             whileInView={{ opacity: 1, translateY: 0, scale: [0, 1.2, 1] }}
             transition={{ duration: 1, delay: isDelayed ? 0.4 : 0.2 }}
             viewport={{ once: true }}
-            className=": flex h-contactBoxHeight w-80  flex-col items-center rounded-md border-2 bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid max-[1125px]:w-contactBoxWidth max-[600px]:w-80 dark:bg-gray-900"
+            className=": flex h-contactBoxHeight w-80  flex-col items-center rounded-md border-2 bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid dark:bg-gray-900 max-[1125px]:w-contactBoxWidth max-[600px]:w-80"
           >
             <p className="mb-7 text-lg font-semibold dark:text-white">
               Follow me on Github
@@ -59,7 +59,7 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
             whileInView={{ opacity: 1, translateY: 0, scale: [0, 1.2, 1] }}
             transition={{ duration: 1, delay: isDelayed ? 0.6 : 0.2 }}
             viewport={{ once: true }}
-            className=" flex h-contactBoxHeight w-80 flex-col items-center rounded-md border-2 border-gmailColor bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid max-[1125px]:w-contactBoxWidth max-[600px]:w-80 dark:bg-gray-900 "
+            className=" flex h-contactBoxHeight w-80 flex-col items-center rounded-md border-2 border-gmailColor bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid dark:bg-gray-900 max-[1125px]:w-contactBoxWidth max-[600px]:w-80 "
           >
             <p className="mb-7  text-lg font-semibold dark:text-white">
               Send me an email

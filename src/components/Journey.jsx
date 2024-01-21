@@ -34,7 +34,7 @@ const Journey = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2 }}
         viewport={{ once: true }}
-        className="mb-20 text-center text-2xl font-semibold"
+        className="mb-20 text-center text-2xl font-semibold dark:text-white"
       >
         My Journey
       </motion.h1>
@@ -73,7 +73,7 @@ const Journey = () => {
 
           <div className="flex max-[600px]:justify-end">
             <motion.div
-              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12 dark:bg-gray-900 dark:text-white  "
+              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 dark:bg-gray-900 dark:text-white max-[600px]:w-9/12  "
               variants={divJourneyVariants}
               whileInView={
                 window.innerWidth <= 600 ? "rightVisible" : "leftVisible"
@@ -144,7 +144,7 @@ const Journey = () => {
             </div>
           </motion.div>
           <motion.div
-            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12 dark:bg-gray-900 dark:text-white "
+            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 dark:bg-gray-900 dark:text-white max-[600px]:w-9/12 "
             variants={divJourneyVariants}
             whileInView="rightVisible"
             initial={{ opacity: 0 }}
@@ -217,7 +217,7 @@ const Journey = () => {
           </motion.div>
           <div className="flex max-[600px]:justify-end">
             <motion.div
-              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12 dark:bg-gray-900 dark:text-white "
+              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 dark:bg-gray-900 dark:text-white max-[600px]:w-9/12 "
               variants={divJourneyVariants}
               whileInView={
                 window.innerWidth <= 600 ? "rightVisible" : "leftVisible"
@@ -292,7 +292,7 @@ const Journey = () => {
             </div>
           </motion.div>
           <motion.div
-            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12 dark:bg-gray-900 dark:text-white"
+            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 dark:bg-gray-900 dark:text-white max-[600px]:w-9/12"
             variants={divJourneyVariants}
             whileInView="rightVisible"
             initial={{ opacity: 0 }}
