@@ -16,6 +16,12 @@ const Home = () => {
   };
 
   useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add(darkMode);
+    }
+  }, []);
+
+  useEffect(() => {
     const interval = setInterval(() => {
       setCounter((prevCounter) => {
         if (prevCounter === 5) {
@@ -28,20 +34,33 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const toggleTheme = () => {
+    document.documentElement.classList.toggle("dark");
+    localStorage.setItem("darkMode?", document.documentElement.classList);
+  };
+
+  let darkMode = localStorage.getItem("darkMode?");
+
   return (
     <section
       onClick={() => {
         if (isGearClicked) {
           setIsGearClicked(false);
         }
-
         if (isHamburgerClicked) {
           setIsHamburgerClicked(false);
         }
       }}
-      className="mb-28 flex h-homeHeight flex-col bg-heroBackGround bg-cover bg-center font-mont text-white"
+      className="mb-28 flex h-homeHeight flex-col bg-heroBackGround bg-cover bg-center font-mont text-white "
     >
       <div className="z-00 absolute top-0 h-homeHeight w-full animate-fadeAnim bg-black opacity-50"></div>
+
+      <div
+        className="absolute top-28 z-20 flex h-6 w-6 animate-fadeHeader items-center justify-center rounded-sm bg-white"
+        onClick={toggleTheme}
+      >
+        <FontAwesomeIcon icon="fa-solid fa-moon" style={{ color: "#000000" }} />
+      </div>
 
       <header className="z-20 mt-5 flex h-20 w-full animate-fadeHeader items-center justify-between px-20 max-[800px]:px-10 xl:px-32">
         <p className="font-semibold">

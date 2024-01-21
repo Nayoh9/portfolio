@@ -7,11 +7,11 @@ html {
 }
 
 .customPositionOct {
-  right: -170px;
+  right: -165px;
 }
 
 .customPositionDate {
-  left: -60px;
+  left: -55px;
 }
 
 .timeline::after {
@@ -20,6 +20,18 @@ html {
   height: 100%;
   background-color: lightgrey;
   position: absolute;
+}
+
+.dark body {
+  background-color: black;
+}
+
+.dark .icon {
+  color: white;
+}
+
+.dark .arrowPlay {
+  color: #111828;
 }
 
 @media screen and (max-width: 600px) {

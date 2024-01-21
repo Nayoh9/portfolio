@@ -26,7 +26,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="mb-28 flex w-screen flex-col items-center justify-center pt-12 font-mont"
+      className=" mb-28 flex w-screen flex-col items-center justify-center pt-12 font-mont   dark:text-white"
     >
       <motion.article
         className="mb-40 flex justify-center gap-x-6 max-[600px]:flex-col"
@@ -45,7 +45,7 @@ const About = () => {
             <p className=" mb-2 text-lg font-semibold max-[750px]:text-sm  ">
               Hello,
             </p>
-            <h1 className="mb-4 font-semibold max-[750px]:text-sm ">
+            <h1 className="mb-4 font-semibold max-[750px]:text-sm  ">
               I AM A FULL STACK JUNIOR DEVELOPER
             </h1>
             <p className="max-[600px]: max-xl:text-sm   ">
@@ -100,12 +100,9 @@ const About = () => {
           </div>
           <div className="flex items-center max-[600px]:justify-center">
             <a href={resume} className="flex" download="CV_ANDRE_YOHANN.pdf">
-              <button className="mt-10 flex w-fit rounded-2xl bg-black p-2 px-4 text-white ">
-                <FontAwesomeIcon
-                  icon="fa-solid fa-download"
-                  style={{ color: "#ffffff" }}
-                />
-                <p className="pl-3 ">DOWNLOAD CV</p>
+              <button className="mt-10 flex w-fit rounded-2xl bg-black p-2 px-4 text-white dark:bg-white dark:text-black ">
+                <FontAwesomeIcon icon="fa-solid fa-download" />
+                <p className="pl-3 dark:font-semibold ">DOWNLOAD CV</p>
               </button>
             </a>
           </div>
@@ -113,7 +110,7 @@ const About = () => {
       </motion.article>
 
       <motion.article
-        className=" flex w-full justify-center bg-lightGrey p-16 max-[600px]:p-5"
+        className=" flex w-full justify-center bg-lightGrey p-16 max-[600px]:p-5  dark:bg-gray-900 "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2 }}
@@ -121,7 +118,9 @@ const About = () => {
       >
         <div>
           <div className="flex flex-col items-center text-center">
-            <p className="mb-4 text-xl font-semibold">My Stack</p>
+            <p className="mb-4 text-xl font-semibold dark:text-white">
+              My Stack
+            </p>
 
             <div className="flex w-5/6  flex-wrap items-center justify-center gap-x-3">
               <a href="https://developer.mozilla.org/fr/docs/Glossary/HTML5">

@@ -20,6 +20,7 @@ import {
   faArrowLeft,
   faBars,
   faXmark,
+  faMoon,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedinIn,
@@ -40,20 +41,16 @@ library.add(
   faArrowLeft,
   faBars,
   faXmark,
+  faMoon,
 );
 
 function App() {
-  const [isDarkModeOn, setIsDarkModeOn] = useState(false);
   const [isDelayed, setIsDelayed] = useState(
     window.innerWidth < 1231 ? false : true,
   );
 
-  isDarkModeOn
-    ? (document.body.style.backgroundColor = "black")
-    : (document.body.style.backgroundColor = "white");
-
   return (
-    <main className="relative w-screen bg-white">
+    <main className="relative w-screen bg-white dark:bg-black">
       <Home />
       <About />
       <Projects isDelayed={isDelayed} setIsDelayed={setIsDelayed} />

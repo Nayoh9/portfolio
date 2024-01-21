@@ -48,7 +48,7 @@ const Journey = () => {
             className="max-[1385px]: z-10 flex w-full justify-center max-[600px]:justify-start"
             viewport={{ once: true }}
           >
-            <div className="relative flex h-logoTimelineHeight w-14 translate-y-12  justify-center rounded-3xl bg-lightGrey">
+            <div className="relative flex h-logoTimelineHeight w-14 translate-y-12  justify-center rounded-3xl bg-lightGrey dark:bg-gray-900">
               <motion.img
                 src="/assets/kyriad-seeklogo.svg"
                 className="w-15 relative z-10"
@@ -73,7 +73,7 @@ const Journey = () => {
 
           <div className="flex max-[600px]:justify-end">
             <motion.div
-              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12  "
+              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12 dark:bg-gray-900 dark:text-white  "
               variants={divJourneyVariants}
               whileInView={
                 window.innerWidth <= 600 ? "rightVisible" : "leftVisible"
@@ -108,8 +108,7 @@ const Journey = () => {
 
               <FontAwesomeIcon
                 icon="fa-solid fa-play"
-                style={{ color: "#D3D3D3" }}
-                className="absolute -right-2 top-4 max-[600px]:-left-2 max-[600px]:rotate-180"
+                className="arrowPlay absolute -right-2 top-4 text-lightGrey max-[600px]:-left-2 max-[600px]:rotate-180"
               />
             </motion.div>
           </div>
@@ -123,7 +122,7 @@ const Journey = () => {
             className="  z-10 flex w-full justify-center max-[600px]:justify-start "
             viewport={{ once: true }}
           >
-            <div className=" flex h-logoTimelineHeight w-14 translate-y-12 justify-center rounded-3xl bg-lightGrey">
+            <div className=" flex h-logoTimelineHeight w-14 translate-y-12 justify-center rounded-3xl bg-lightGrey dark:bg-gray-900">
               <motion.img
                 src="/assets/programmingLaptop.png"
                 className="z-10 my-auto h-logoTitleProjectHeight w-10  "
@@ -145,7 +144,7 @@ const Journey = () => {
             </div>
           </motion.div>
           <motion.div
-            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12 "
+            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12 dark:bg-gray-900 dark:text-white "
             variants={divJourneyVariants}
             whileInView="rightVisible"
             initial={{ opacity: 0 }}
@@ -181,8 +180,7 @@ const Journey = () => {
 
             <FontAwesomeIcon
               icon="fa-solid fa-play"
-              style={{ color: "#D3D3D3" }}
-              className="absolute -left-2 top-4 rotate-180"
+              className="arrowPlay absolute -left-2 top-4 rotate-180 text-lightGrey"
             />
           </motion.div>
         </article>
@@ -195,7 +193,7 @@ const Journey = () => {
             className="  z-10 flex w-full justify-center max-[600px]:justify-start "
             viewport={{ once: true }}
           >
-            <div className="flex h-logoTimelineHeight w-14 translate-y-12 justify-center  rounded-3xl bg-lightGrey  ">
+            <div className="flex h-logoTimelineHeight w-14 translate-y-12 justify-center rounded-3xl  bg-lightGrey dark:bg-gray-900  ">
               <motion.img
                 src="/assets/reacteurLogo.jpeg"
                 className=" relative my-auto h-reacteurHeight w-8 rounded-full "
@@ -219,7 +217,7 @@ const Journey = () => {
           </motion.div>
           <div className="flex max-[600px]:justify-end">
             <motion.div
-              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12 "
+              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12 dark:bg-gray-900 dark:text-white "
               variants={divJourneyVariants}
               whileInView={
                 window.innerWidth <= 600 ? "rightVisible" : "leftVisible"
@@ -257,8 +255,7 @@ const Journey = () => {
 
               <FontAwesomeIcon
                 icon="fa-solid fa-play"
-                style={{ color: "#D3D3D3" }}
-                className="absolute -right-2 top-4 max-[600px]:-left-2 max-[600px]:rotate-180"
+                className=" arrowPlay absolute -right-2 top-4 text-lightGrey max-[600px]:-left-2 max-[600px]:rotate-180"
               />
             </motion.div>
           </div>
@@ -272,7 +269,7 @@ const Journey = () => {
             className="  z-10 flex w-full justify-center max-[600px]:justify-start "
             viewport={{ once: true }}
           >
-            <div className=" flex h-logoTimelineHeight w-14 translate-y-12 justify-center rounded-3xl bg-lightGrey">
+            <div className=" flex h-logoTimelineHeight w-14 translate-y-12 justify-center rounded-3xl bg-lightGrey dark:bg-gray-900">
               <motion.img
                 src="/assets/interrogation.png"
                 className="z-10 my-auto h-logoTitleProjectHeight w-10"
@@ -295,7 +292,7 @@ const Journey = () => {
             </div>
           </motion.div>
           <motion.div
-            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12"
+            className="relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 max-[600px]:w-9/12 dark:bg-gray-900 dark:text-white"
             variants={divJourneyVariants}
             whileInView="rightVisible"
             initial={{ opacity: 0 }}
@@ -316,8 +313,7 @@ const Journey = () => {
 
             <FontAwesomeIcon
               icon="fa-solid fa-play"
-              style={{ color: "#D3D3D3" }}
-              className="absolute -left-2 top-4 rotate-180"
+              className="arrowPlay absolute -left-2 top-4 rotate-180 text-lightGrey"
             />
           </motion.div>
         </article>
