@@ -40,7 +40,7 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
             whileInView={{ opacity: 1, translateY: 0, scale: [0, 1.2, 1] }}
             transition={{ duration: 1, delay: isDelayed ? 0.4 : 0.2 }}
             viewport={{ once: true }}
-            className=": flex h-contactBoxHeight w-80  flex-col items-center rounded-md border-2 bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid dark:bg-gray-900 max-[1125px]:w-contactBoxWidth max-[600px]:w-80"
+            className=": flex h-contactBoxHeight w-80  flex-col items-center rounded-md border-2 bg-lightGrey p-10 hover:animate-gigleSocials hover:border-solid dark:border-white dark:bg-gray-900 max-[1125px]:w-contactBoxWidth max-[600px]:w-80"
           >
             <p className="mb-7 text-lg font-semibold dark:text-white">
               Follow me on Github

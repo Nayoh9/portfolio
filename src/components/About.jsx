@@ -36,7 +36,7 @@ const About = () => {
         viewport={{ once: true }}
       >
         <img
-          src="/assets/photoflouté.jpeg"
+          src="/assets/photofloutée.png"
           alt="Photo d'un homme sur fond vert"
           className="w-60 border-4 border-double border-lightGrey object-cover max-[900px]:mb-2 max-[900px]:h-fit max-[900px]:w-52 max-[600px]:self-center "
         />
@@ -49,12 +49,12 @@ const About = () => {
               I AM A FULL STACK JUNIOR DEVELOPER
             </h1>
             <p className="max-[600px]: max-xl:text-sm   ">
-              I'm Andre Yohann, a 28-year-old full-stack web developer in
-              transition. With a passion for crafting exceptional web
-              experiences, I specialize in technologies like HTML, CSS,
-              JavaScript, React.js, and Node.js. Explore my portfolio to see how
-              I turn ideas into high-performance web solutions. Ready to
-              collaborate on your exciting projects. See you soon!
+              I am Yohann, a 28-year-old full-stack web developer in transition.
+              With a passion for crafting exceptional web experiences, I
+              specialize in technologies such as JavaScript, React.js, React
+              Native and Node.js. Explore my portfolio to see how I turn ideas
+              into high-performance web solutions. I am ready to collaborate on
+              your exciting projects. See you soon!
             </p>
           </div>
           <div className="flex gap-x-20 max-[900px]:gap-x-1 max-[600px]:gap-x-10 max-[600px]:pl-5">
@@ -110,7 +110,7 @@ const About = () => {
       </motion.article>
 
       <motion.article
-        className=" flex w-full justify-center bg-lightGrey p-16 max-[600px]:p-5  dark:bg-gray-900 "
+        className=" flex w-full justify-center bg-lightGrey p-16 dark:bg-gray-900  max-[600px]:p-5 "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2 }}
