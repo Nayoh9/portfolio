@@ -38,7 +38,7 @@ const PortfolioProject = ({ setIsDelayed, isDelayed }) => {
           </p>
         </div>
 
-        <div className="gap-x-1g my-6 flex justify-center">
+        <div className="gap-x-1g my-6 flex justify-center gap-x-1">
           <a href="https://github.com/Nayoh9?tab=repositories">
             <img
               src="/assets/stack portfolio/github_irxfsl.png"
