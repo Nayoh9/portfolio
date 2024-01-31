@@ -47,7 +47,7 @@ const KiessProject = ({ isDelayed }) => {
               className="w-10"
             />
           </a>
-          <a href="https://eloquent-yeot-e2bd60.netlify.app/">
+          <a href="https://kiess.fr/">
             <FontAwesomeIcon
               icon="fa-solid fa-link"
               className=" h-10 w-10 rotate-12 text-black dark:text-white"
