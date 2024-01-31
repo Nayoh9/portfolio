@@ -47,7 +47,7 @@ library.add(
 
 function App() {
   const [isDelayed, setIsDelayed] = useState(
-    window.innerWidth < 1231 ? false : true,
+    window.innerWidth < 1660 ? false : true,
   );
 
   return (
