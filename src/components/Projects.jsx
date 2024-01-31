@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import MarvelProject from "./MarvelProject";
 import ScansipProject from "./ScansipProject";
 import PortfolioProject from "./PortfolioProject";
+import KiessProject from "./KiessProject";
 
 const Projects = ({ isDelayed, setIsDelayed }) => {
   return (
@@ -20,9 +21,10 @@ const Projects = ({ isDelayed, setIsDelayed }) => {
         My Projects
       </motion.h1>
       <motion.div className="flex flex-wrap justify-center gap-10 ">
-        <MarvelProject setIsDelayed={setIsDelayed} isDelayed={isDelayed} />
-        <ScansipProject setIsDelayed={setIsDelayed} isDelayed={isDelayed} />
-        <PortfolioProject setIsDelayed={setIsDelayed} isDelayed={isDelayed} />
+        <MarvelProject isDelayed={isDelayed} />
+        <ScansipProject isDelayed={isDelayed} />
+        <PortfolioProject isDelayed={isDelayed} />
+        <KiessProject isDelayed={isDelayed} />
       </motion.div>
     </section>
   );
