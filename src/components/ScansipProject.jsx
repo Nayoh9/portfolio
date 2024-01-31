@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
-const ScansipProject = ({ setIsDelayed, isDelayed }) => {
+const ScansipProject = ({ isDelayed }) => {
   return (
     <motion.article
       initial={{ opacity: 0, translateY: "100px" }}
