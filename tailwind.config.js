@@ -13,6 +13,7 @@ export default {
         divTimelineWidth: "300px",
         contactBoxWidth: "400px",
 
+
       },
       colors: {
         "lightGrey": "#D3D3D3",
