@@ -36,7 +36,7 @@ const About = () => {
         viewport={{ once: true }}
       >
         <img
-          src="/assets/photofloutée.png"
+          src="/assets/photofloutée.jpeg"
           alt="Photo d'un homme sur fond vert"
           className="w-60 border-4 border-double border-lightGrey object-cover max-[900px]:mb-2 max-[900px]:h-fit max-[900px]:w-52 max-[600px]:self-center "
         />

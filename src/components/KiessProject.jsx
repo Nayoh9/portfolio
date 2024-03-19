@@ -9,7 +9,7 @@ const KiessProject = ({ isDelayed }) => {
       whileInView={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 1, delay: isDelayed ? 2 : 0.2 }}
       viewport={{ once: true }}
-      className="flex h-projectDivHeight justify-center"
+      className=" flex h-projectDivHeight justify-center "
     >
       <div className="w-96 rounded-md bg-lightGrey py-6 dark:bg-gray-900 dark:text-white  max-[860px]:w-3/5 max-[600px]:w-4/5">
         <img
