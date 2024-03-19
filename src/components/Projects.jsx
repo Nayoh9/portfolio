@@ -1,7 +1,6 @@
 // Package import
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
-
+ 
 // Component import
 import MarvelProject from "./MarvelProject";
 import ScansipProject from "./ScansipProject";
@@ -10,7 +9,10 @@ import KiessProject from "./KiessProject";
 
 const Projects = ({ isDelayed, setIsDelayed }) => {
   return (
-    <section className="mb-28 pt-12 font-mont" id="projects">
+    <section
+      className="mb-28 flex flex-col items-center pt-12 font-mont"
+      id="projects"
+    >
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -20,7 +22,7 @@ const Projects = ({ isDelayed, setIsDelayed }) => {
       >
         My Projects
       </motion.h1>
-      <motion.div className="flex flex-wrap justify-center gap-10">
+      <motion.div className=" flex flex-wrap justify-center gap-10">
         <MarvelProject isDelayed={isDelayed} />
         <ScansipProject isDelayed={isDelayed} />
         <PortfolioProject isDelayed={isDelayed} />
