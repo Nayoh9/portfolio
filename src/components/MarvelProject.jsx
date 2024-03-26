@@ -2,6 +2,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
+const hello = "";
+
 const MarvelProject = ({ isDelayed }) => {
   return (
     <motion.article
