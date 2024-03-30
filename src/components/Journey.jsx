@@ -40,7 +40,7 @@ const Journey = () => {
       </motion.h1>
 
       <section className="timeline relative flex flex-col items-center gap-y-16 max-[600px]:items-start">
-        <article className=" flex w-5/12 flex-col max-[1385px]:w-screen max-[1385px]:px-10 max-[600px]:pl-1 ">
+        <article className=" flex w-5/12 flex-col max-[1385px]:w-full max-[1385px]:px-10 max-[600px]:pl-1 ">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
@@ -114,7 +114,7 @@ const Journey = () => {
           </div>
         </article>
 
-        <article className="flex w-5/12 flex-col items-end max-[1385px]:w-screen max-[1385px]:px-10 max-[600px]:pl-1">
+        <article className="flex w-5/12 flex-col items-end max-[1385px]:w-full max-[1385px]:px-10 max-[600px]:pl-1">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
@@ -185,7 +185,7 @@ const Journey = () => {
           </motion.div>
         </article>
 
-        <article className="flex w-5/12 flex-col max-[1385px]:w-screen max-[1385px]:px-10 max-[600px]:pl-1  ">
+        <article className="flex w-5/12 flex-col max-[1385px]:w-full max-[1385px]:px-10 max-[600px]:pl-1  ">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
@@ -261,7 +261,7 @@ const Journey = () => {
           </div>
         </article>
 
-        <article className="flex w-5/12 flex-col items-end max-[1385px]:w-screen max-[1385px]:px-10 max-[600px]:pl-1">
+        <article className="flex w-5/12 flex-col items-end max-[1385px]:w-full max-[1385px]:px-10 max-[600px]:pl-1">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
