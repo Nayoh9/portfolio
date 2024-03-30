@@ -26,7 +26,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className=" mb-28 flex w-screen flex-col items-center justify-center pt-12 font-mont   dark:text-white"
+      className=" mb-28 flex flex-col items-center justify-center pt-12 font-mont   dark:text-white"
     >
       <motion.article
         className="mb-40 flex justify-center gap-x-6 max-[600px]:flex-col"

@@ -45,7 +45,7 @@ const Journey = () => {
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="max-[1385px]: z-10 flex w-full justify-center max-[600px]:justify-start"
+            className="flex w-full justify-center max-[1385px]:z-10 max-[600px]:justify-start"
             viewport={{ once: true }}
           >
             <div className="relative flex h-logoTimelineHeight w-14 translate-y-12  justify-center rounded-3xl bg-lightGrey dark:bg-gray-900">
