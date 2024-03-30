@@ -51,7 +51,7 @@ function App() {
   );
 
   return (
-    <main className="relative w-screen bg-white dark:bg-black">
+    <main className="relative bg-white dark:bg-black">
       <Home />
       <About />
       <Projects isDelayed={isDelayed} setIsDelayed={setIsDelayed} />
