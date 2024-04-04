@@ -17,7 +17,7 @@ const KiessProject = ({ isDelayed }) => {
           alt="logo de coeur avec des lettres en rose"
           className="w-26 mx-auto h-imageProjectHeight"
         />
-        <div className="my-6 flex items-center pl-2">
+        <div className="my-6 flex items-center pl-4">
           <img
             src="/assets/heart.svg"
             alt="coeur de couleur rose bonbon"
@@ -28,7 +28,7 @@ const KiessProject = ({ isDelayed }) => {
         </div>
 
         <div>
-          <p className="p-2">
+          <p className="p-4">
             The Kiess application is my first venture into the field of
             development. It is a mobile dating application that will soon be
             launched on various app stores. I joined a team of four other

@@ -17,7 +17,7 @@ const MarvelProject = ({ isDelayed }) => {
           alt="Marvel écrit en blanc sur fond rouge"
           className=" mx-auto h-imageProjectHeight w-64 "
         />
-        <div className=" my-6 flex items-center">
+        <div className="my-6 flex items-center pl-4">
           <img
             src="/assets/captain-america-seeklogo.com_j7odqp.svg"
             alt="Bouclier du capitaine America"
@@ -28,7 +28,7 @@ const MarvelProject = ({ isDelayed }) => {
         </div>
 
         <div>
-          <p className="p-2">
+          <p className="p-4">
             This project queries an API to gather all Marvel heroes and comics.
             By clicking on these heroes or comics, you can access detailed
             information about them. The option to create an account is available

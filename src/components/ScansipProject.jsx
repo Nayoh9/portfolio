@@ -17,7 +17,7 @@ const ScansipProject = ({ isDelayed }) => {
           alt="Scan Sip écrit en blanc et vert sur fond noir"
           className="w-26 mx-auto h-imageProjectHeight"
         />
-        <div className="my-6 flex items-center pl-2">
+        <div className="my-6 flex items-center pl-4">
           <img
             src="/assets/sandwich-svgrepo-com.svg"
             alt="Sandwich"
@@ -28,7 +28,7 @@ const ScansipProject = ({ isDelayed }) => {
         </div>
 
         <div>
-          <p className="p-2">
+          <p className="p-4">
             This web application offers a comprehensive management platform for
             restaurants, designed to be accessed through mobile devices for
             clients and tablets for administrators. It enables restaurant owners

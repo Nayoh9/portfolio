@@ -20,7 +20,6 @@ html {
   height: 100%;
   background-color: lightgrey;
   position: absolute;
-  z-index: 1;
 }
 
 .dark body {

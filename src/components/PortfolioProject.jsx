@@ -17,7 +17,7 @@ const PortfolioProject = ({ isDelayed }) => {
           alt="Logo representant un Y"
           className="w-26 mx-auto h-imageProjectHeight"
         />
-        <div className="my-6 flex items-center pl-2">
+        <div className="my-6 flex items-center pl-4">
           <img
             src="/assets/Laptop_icon.svg"
             alt="Laptop"
@@ -28,7 +28,7 @@ const PortfolioProject = ({ isDelayed }) => {
         </div>
 
         <div>
-          <p className="p-2">
+          <p className="p-4">
             As a junior developer, my portfolio serves as a comprehensive
             showcase of my skills, highlighting the projects I have already
             completed and providing an exciting preview of upcoming projects. It
