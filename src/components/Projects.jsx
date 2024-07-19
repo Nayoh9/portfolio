@@ -2,15 +2,15 @@
 import { motion } from "framer-motion";
 
 // Component import
-import MarvelProject from "./MarvelProject";
+
 import ScansipProject from "./ScansipProject";
 import PortfolioProject from "./PortfolioProject";
-import KiessProject from "./KiessProject";
+import PortfolioPhp from "./PortfolioPhp";
 
 const Projects = ({ isDelayed, setIsDelayed }) => {
   return (
     <section
-      className="mb-28 flex flex-col items-center pt-12 font-mont"
+      className="mx-10 mb-28 flex flex-col pt-12 font-mont"
       id="projects"
     >
       <motion.h1
@@ -22,11 +22,14 @@ const Projects = ({ isDelayed, setIsDelayed }) => {
       >
         My Projects
       </motion.h1>
-      <motion.div className="flex flex-wrap justify-center gap-10">
-        <MarvelProject isDelayed={isDelayed} />
+
+      <motion.div className="mb-2 flex flex-wrap justify-center gap-2">
+        {/* <MarvelProject isDelayed={isDelayed} /> */}
         <ScansipProject isDelayed={isDelayed} />
         <PortfolioProject isDelayed={isDelayed} />
-        <KiessProject isDelayed={isDelayed} />
+        <PortfolioPhp isDelayed={isDelayed} />
+        {/* php portfolio */}
+        {/* hairstyle */}
       </motion.div>
     </section>
   );

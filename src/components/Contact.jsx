@@ -46,7 +46,7 @@ const Contact = ({ isDelayed, setIsDelayed }) => {
               Follow me on Github
             </p>
             <img
-              src="/assets/stack portfolio/github_irxfsl.png"
+              src="/assets/stackportfolio/github_irxfsl.png"
               alt="chat blanc sur fond noir representant le logo github "
               className="w-22 h-20"
             />

@@ -40,6 +40,72 @@ const Journey = () => {
       </motion.h1>
 
       <section className="timeline relative flex flex-col items-center gap-y-16 max-[600px]:items-start">
+        <article className="flex w-6/12 flex-col max-[1385px]:w-full max-[1385px]:px-10 max-[600px]:pl-1 ">
+          <motion.div
+            whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="z-20 flex w-full justify-center max-[1385px]:z-10 max-[600px]:justify-start"
+            viewport={{ once: true }}
+          >
+            <div className="relative flex h-logoTimelineHeight w-14 translate-y-12  justify-center rounded-3xl bg-lightGrey dark:bg-gray-900">
+              <motion.img
+                src="/assets/interrogation.png"
+                className="relative my-auto h-reacteurHeight w-8 rounded-full"
+                whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
+                initial={{ opacity: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+              />
+
+              <motion.p
+                className="  absolute -right-14 top-3  text-lightGrey max-[600px]:hidden"
+                variants={divJourneyVariants}
+                whileInView="leftVisible"
+                initial={{ opacity: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
+                Date()
+              </motion.p>
+            </div>
+          </motion.div>
+
+          <div className="flex max-[600px]:justify-end">
+            <motion.div
+              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 dark:bg-gray-900 dark:text-white max-[600px]:w-9/12  "
+              variants={divJourneyVariants}
+              whileInView={
+                window.innerWidth <= 600 ? "rightVisible" : "leftVisible"
+              }
+              initial={{ opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <h2 className=" text-xl font-semibold">What's next ?</h2>
+              <p className="text-sm">
+                Now that I've acquired a foundation of skills and a new way of
+                thinking, I'm ready to enter the world of development to gain
+                new skills and enhance my stack.
+              </p>
+              <p className="text-lm font-semibold">
+                On my way to new challenges!
+              </p>
+
+              {datesBelow ? (
+                <p className="text-sm font-semibold"> Date()</p>
+              ) : (
+                ""
+              )}
+
+              <FontAwesomeIcon
+                icon="fa-solid fa-play"
+                className="arrowPlay absolute -right-2 top-4 text-lightGrey max-[600px]:-left-2 max-[600px]:rotate-180"
+              />
+            </motion.div>
+          </div>
+        </article>
+
         <article className="flex w-6/12 flex-col items-end max-[1385px]:w-full max-[1385px]:px-10 max-[600px]:pl-1">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
@@ -50,7 +116,7 @@ const Journey = () => {
           >
             <div className=" flex h-logoTimelineHeight w-14 translate-y-12 justify-center rounded-3xl bg-lightGrey dark:bg-gray-900">
               <motion.img
-                src="/assets/interrogation.png"
+                src="/assets/reacteurLogo.jpeg"
                 className="z-10 my-auto h-logoTitleProjectHeight w-10"
                 whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
                 initial={{ opacity: 0 }}
@@ -59,14 +125,14 @@ const Journey = () => {
               />
 
               <motion.p
-                className="customPositionDate absolute top-3 text-lightGrey max-[600px]:hidden"
+                className="absolute -left-44 top-3 text-lightGrey max-[600px]:hidden"
                 variants={divJourneyVariants}
                 whileInView="rightVisible"
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                Date()
+                Oct 2023 - Dec 2023
               </motion.p>
             </div>
           </motion.div>
@@ -88,8 +154,11 @@ const Journey = () => {
               On my way to new challenges!
             </p>
 
-            {datesBelow ? <p className="text-sm font-semibold"> Date()</p> : ""}
-
+            {datesBelow ? (
+              <p className="text-sm font-semibold ">Oct 2023 - Dec 2023</p>
+            ) : (
+              ""
+            )}
             <FontAwesomeIcon
               icon="fa-solid fa-play"
               className="arrowPlay absolute -left-2 top-4 rotate-180 text-lightGrey"
@@ -97,83 +166,7 @@ const Journey = () => {
           </motion.div>
         </article>
 
-        {/* <article className="w-6/12 flex-col max-[1385px]:w-full max-[1385px]:px-10 max-[600px]:pl-1  ">
-          <motion.div
-            whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
-            initial={{ opacity: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="z-10 flex w-full justify-center max-[600px]:justify-start "
-            viewport={{ once: true }}
-          >
-            <div className="z-10 flex h-logoTimelineHeight w-14 translate-y-12 justify-center rounded-3xl  bg-lightGrey dark:bg-gray-900  ">
-              <motion.img
-                src="/assets/reacteurLogo.jpeg"
-                className=" relative my-auto h-reacteurHeight w-8 rounded-full "
-                whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
-                initial={{ opacity: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                viewport={{ once: true }}
-              />
-
-              <motion.p
-                className="customPositionOct absolute -right-28 top-3 text-lightGrey max-[600px]:hidden"
-                variants={divJourneyVariants}
-                whileInView="leftVisible"
-                initial={{ opacity: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                viewport={{ once: true }}
-              >
-                Oct 2023 - Dec 2023
-              </motion.p>
-            </div>
-          </motion.div>
-          <div className="flex max-[600px]:justify-end">
-            <motion.div
-              className=" relative flex w-5/12 flex-col items-start gap-y-3 rounded-md bg-lightGrey p-3 dark:bg-gray-900 dark:text-white max-[600px]:w-9/12 "
-              variants={divJourneyVariants}
-              whileInView={
-                window.innerWidth <= 600 ? "rightVisible" : "leftVisible"
-              }
-              initial={{ opacity: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              <h2 className=" text-xl font-semibold">Programming Training</h2>
-
-              <p className="text-sm">
-                After gaining knowledge in HTML, CSS, and JavaScript, I reached
-                a point where I felt stuck. I didn't know which framework to
-                learn or how the back-end and a database worked. After some
-                research, I decided to self-fund an intensive 2-month training.
-              </p>
-              <p className="text-sm">
-                During this training, I learned to use NodeJS, React, and React
-                Native. I acquired skills in installing packages, using the
-                terminal, and all those things that used to intimidate me when I
-                didn't know them.
-              </p>
-              <p className="text-sm">
-                What also motivated me to pursue this training is that, after
-                completing a 6-month internship in your company, I will be able
-                to obtain an RNCP qualification equivalent to a bachelor's
-                degree, providing me with credibility in the professional world.
-              </p>
-
-              {datesBelow ? (
-                <p className="text-sm font-semibold"> Oct 2023 - Dec 2023</p>
-              ) : (
-                ""
-              )}
-
-              <FontAwesomeIcon
-                icon="fa-solid fa-play"
-                className=" arrowPlay absolute -right-2 top-4 text-lightGrey max-[600px]:-left-2 max-[600px]:rotate-180"
-              />
-            </motion.div>
-          </div>
-        </article> */}
-
-        <article className=" flex w-6/12 flex-col max-[1385px]:w-full max-[1385px]:px-10 max-[600px]:pl-1 ">
+        <article className="flex w-6/12 flex-col max-[1385px]:w-full max-[1385px]:px-10 max-[600px]:pl-1 ">
           <motion.div
             whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
             initial={{ opacity: 0 }}

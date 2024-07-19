@@ -45,7 +45,7 @@ const ScansipProject = ({ isDelayed }) => {
         <div className="my-6 flex justify-center gap-x-1">
           <a href="https://github.com/Nayoh9?tab=repositories">
             <img
-              src="/assets/stack portfolio/github_irxfsl.png"
+              src="/assets/stackportfolio/github_irxfsl.png"
               alt="chat blanc sur fond noir, logo github"
               className="w-10"
             />
@@ -87,7 +87,7 @@ const ScansipProject = ({ isDelayed }) => {
         <div className="flex flex-wrap justify-center gap-x-2">
           <div className="flex items-center">
             <img
-              src="/assets/stack portfolio/reactjs-19291084.png"
+              src="/assets/stackportfolio/reactjs-19291084.png"
               alt="Logo react"
               className="w-8"
             />
@@ -95,7 +95,7 @@ const ScansipProject = ({ isDelayed }) => {
           </div>
           <div className="flex items-center">
             <img
-              src="/assets/stack portfolio/express.png"
+              src="/assets/stackportfolio/express.png"
               alt="Lettre E et X represantant express.js"
               className="w-8"
             />
@@ -103,7 +103,7 @@ const ScansipProject = ({ isDelayed }) => {
           </div>
           <div className="flex items-center ">
             <img
-              src="/assets/stack portfolio/nodejs-d83eb6dd.png"
+              src="/assets/stackportfolio/nodejs-d83eb6dd.png"
               alt="symbole node JS écrit en vert"
               className="w-8"
             />
@@ -112,7 +112,7 @@ const ScansipProject = ({ isDelayed }) => {
 
           <div className="flex items-center ">
             <img
-              src="/assets/stack portfolio/mongodb-54000b2b.png"
+              src="/assets/stackportfolio/mongodb-54000b2b.png"
               alt="une feuille au millieu d'un écusson representant le logo mongoDB"
               className="w-8"
             />
@@ -121,7 +121,7 @@ const ScansipProject = ({ isDelayed }) => {
 
           <div className="flex items-center ">
             <img
-              src="/assets/stack portfolio/tailwind-6ece120d.png"
+              src="/assets/stackportfolio/tailwind-6ece120d.png"
               alt="Deux traits bleus ondulés representant le logo tailwind"
               className="w-8"
             />

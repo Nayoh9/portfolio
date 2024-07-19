@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Typewriter, Cursor } from "react-simple-typewriter";
 
 // Assets import
-import resume from "/assets/CV_ANDRE_YOHANN.pdf";
+import resume from "/assets/curriculum-vitae-andre-yohann.pdf";
 
 const Home = () => {
   const [isGearClicked, setIsGearClicked] = useState(false);
@@ -156,11 +156,11 @@ const Home = () => {
         <div className="flex animate-fadeHeader items-center gap-x-3">
           <img src="/assets/line-white.svg" className="w-10 opacity-60" />
           <p className="relative text-xs font-extralight">
-            Looking for an internship
+            Looking for a great opportunity
           </p>
           <img src="/assets/line-white.svg" className="w-10 opacity-60" />
         </div>
-        <a href={resume} download="CV_ANDRE_YOHANN.pdf">
+        <a href={resume} download="curriculum-vitae-andre-yohann.pdf">
           <button className="animate-fadeHeader rounded-xl bg-white px-5 py-1 text-sm font-semibold text-black transition-all duration-500 ease-linear hover:bg-black hover:text-white">
             HIRE ME
           </button>

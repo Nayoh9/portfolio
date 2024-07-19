@@ -42,7 +42,7 @@ const KiessProject = ({ isDelayed }) => {
         <div className="gap-x-1g my-6 flex justify-center gap-x-1">
           <a href="https://github.com/Nayoh9?tab=repositories">
             <img
-              src="/assets/stack portfolio/github_irxfsl.png"
+              src="/assets/stackportfolio/github_irxfsl.png"
               alt="chat blanc sur fond noir, logo github"
               className="w-10"
             />
@@ -66,7 +66,7 @@ const KiessProject = ({ isDelayed }) => {
         <div className="flex flex-wrap justify-center gap-x-2">
           <div className="flex items-center">
             <img
-              src="/assets/stack portfolio/reactjs-19291084.png"
+              src="/assets/stackportfolio/reactjs-19291084.png"
               alt="Logo react"
               className="w-8"
             />
@@ -75,7 +75,7 @@ const KiessProject = ({ isDelayed }) => {
 
           <div className="flex items-center ">
             <img
-              src="/assets/stack portfolio/tailwind-6ece120d.png"
+              src="/assets/stackportfolio/tailwind-6ece120d.png"
               alt="Deux traits bleus representant le logo Tailwind"
               className="w-8"
             />
