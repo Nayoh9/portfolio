@@ -11,7 +11,7 @@ const PortfolioPhp = ({ isDelayed }) => {
       viewport={{ once: true }}
       className="flex h-projectDivHeight justify-center"
     >
-      <div className="w-96 rounded-md bg-lightGrey py-6 dark:bg-gray-900 dark:text-white  max-[860px]:w-3/5 max-[600px]:w-4/5">
+      <div className="w-96 rounded-md bg-lightGrey py-6 dark:bg-gray-900 dark:text-white  max-[860px]:w-3/5 max-[600px]:w-11/12">
         <img
           src="/assets/portfolio-php.jpg"
           alt="Logo representant un Y"
@@ -32,13 +32,18 @@ const PortfolioPhp = ({ isDelayed }) => {
             I developed an interactive portfolio for a graphic designer,
             featuring a comprehensive dashboard. This project allows the user to
             create, modify, delete, and restore projects by uploading photos and
-            filling in the associated fields. The user can also create
-            categories to organize their projects. Additionally, various
-            customization options are available, such as modifying the website
-            name, displaying the number of completed projects, satisfied
-            clients, and managing the appearance of social media links. The code
-            was implemented in PHP and JavaScript, with a MySQL database for
-            projects and AWS S3 for image hosting.
+            filling in the associated fields.
+            <br />
+            <br />
+            The user can also create categories to organize their projects.
+            Additionally, various customization options are available, such as
+            modifying the website name, displaying the number of completed
+            projects, satisfied clients, and managing the appearance of social
+            media links.
+            <br />
+            <br />
+            The code was implemented in PHP and JavaScript, with a MySQL
+            database for projects and AWS S3 for image hosting.
           </p>
         </div>
 

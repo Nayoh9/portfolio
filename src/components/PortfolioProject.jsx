@@ -11,7 +11,7 @@ const PortfolioProject = ({ isDelayed }) => {
       viewport={{ once: true }}
       className="flex h-projectDivHeight justify-center"
     >
-      <div className="w-96 rounded-md bg-lightGrey py-6 dark:bg-gray-900 dark:text-white  max-[860px]:w-3/5 max-[600px]:w-4/5">
+      <div className="w-96 rounded-md bg-lightGrey py-6 dark:bg-gray-900 dark:text-white  max-[860px]:w-3/5 max-[600px]:w-11/12">
         <img
           src="/assets/logoy.svg"
           alt="Logo representant un Y"

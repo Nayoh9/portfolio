@@ -190,6 +190,31 @@ const About = () => {
                   className="w-24 transition-all hover:scale-125 max-[600px]:w-14"
                 />
               </a>
+
+              <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">
+                <img
+                  src="/assets/stackportfolio/bootstrap.png"
+                  alt="Logo bootstrap"
+                  className="reactLogoHeight w-24 transition-all hover:scale-125 max-[600px]:h-14 max-[600px]:w-14"
+                />
+              </a>
+
+              <a href="https://www.php.net/">
+                <img
+                  src="/assets/stackportfolio/php.png"
+                  alt="logo php"
+                  className="w-24 transition-all hover:scale-125 max-[600px]:w-14"
+                />
+              </a>
+
+              <a href="https://www.mysql.com/fr/">
+                <img
+                  src="/assets/stackportfolio/mysql.png"
+                  alt="Logo mySql"
+                  className="w-24 transition-all hover:scale-125 max-[600px]:w-14"
+                />
+              </a>
+
               <a href="https://git-scm.com/">
                 <img
                   src="/assets/stackportfolio/git.png"

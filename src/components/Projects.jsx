@@ -28,8 +28,6 @@ const Projects = ({ isDelayed, setIsDelayed }) => {
         <ScansipProject isDelayed={isDelayed} />
         <PortfolioProject isDelayed={isDelayed} />
         <PortfolioPhp isDelayed={isDelayed} />
-        {/* php portfolio */}
-        {/* hairstyle */}
       </motion.div>
     </section>
   );

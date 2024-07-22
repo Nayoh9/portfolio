@@ -11,7 +11,7 @@ const ScansipProject = ({ isDelayed }) => {
       viewport={{ once: true }}
       className="flex h-projectDivHeight justify-center"
     >
-      <div className="w-96 rounded-md bg-lightGrey py-6 dark:bg-gray-900 dark:text-white  max-[860px]:w-3/5 max-[600px]:w-4/5">
+      <div className="w-96 rounded-md bg-lightGrey py-6 dark:bg-gray-900 dark:text-white  max-[860px]:w-3/5 max-[600px]:w-11/12">
         <img
           src="/assets/scansip.svg"
           alt="Scan Sip écrit en blanc et vert sur fond noir"
@@ -31,14 +31,19 @@ const ScansipProject = ({ isDelayed }) => {
           <p className="p-4">
             This web application offers a comprehensive management platform for
             restaurants, designed to be accessed through mobile devices for
-            clients and tablets for administrators. It enables restaurant owners
-            (on the admin side) to create and add their own products to the
-            menu. Customers can easily browse the menu, select products, add
-            them to their cart, and securely complete the payment through Stripe
-            (spam '42' to complete the fields.). Upon finalizing the order,
-            customers can conveniently retrieve their invoice in PDF format. On
-            the admin side, the interface provides efficient order management,
-            offering a complete view of transactions.
+            clients and tablets for administrators.
+            <br />
+            <br />
+            It enables restaurant owners (on the admin side) to create and add
+            their own products to the menu. Customers can easily browse the
+            menu, select products, add them to their cart, and securely complete
+            the payment through Stripe (spam '42' to complete the fields.).
+            <br />
+            <br />
+            Upon finalizing the order, customers can conveniently retrieve their
+            invoice in PDF format. On the admin side, the interface provides
+            efficient order management, offering a complete view of
+            transactions.
           </p>
         </div>
 

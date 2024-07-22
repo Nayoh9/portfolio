@@ -116,8 +116,8 @@ const Journey = () => {
           >
             <div className=" flex h-logoTimelineHeight w-14 translate-y-12 justify-center rounded-3xl bg-lightGrey dark:bg-gray-900">
               <motion.img
-                src="/assets/reacteurLogo.jpeg"
-                className="z-10 my-auto h-logoTitleProjectHeight w-10"
+                src="/assets/logo-appup.png"
+                className="z-10 my-auto h-logoTitleProjectHeight w-10 rounded-full"
                 whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
@@ -132,7 +132,7 @@ const Journey = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                Oct 2023 - Dec 2023
+                Jan 2024 - Jun 2024
               </motion.p>
             </div>
           </motion.div>
@@ -144,18 +144,26 @@ const Journey = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h2 className=" text-xl font-semibold">What's next ?</h2>
+            <h2 className=" text-xl font-semibold">Internship</h2>
             <p className="text-sm">
-              Now that I've acquired a foundation of skills and a new way of
-              thinking, I'm ready to enter the world of development to gain new
-              skills and enhance my stack.
-            </p>
-            <p className="text-lm font-semibold">
-              On my way to new challenges!
+              During this six-month internship, I acquired new skills,
+              particularly in discovering PHP and MySQL. However, it was mainly
+              in terms of logic that I made significant progress. I learned to
+              better analyze problems and anticipate potential challenges
+              related to functionality. Additionally, I integrated numerous best
+              practices in both development and database management.
+              <br /> <br />
+              I also learned to meet deadlines and work effectively in a team,
+              which enhanced my ability to collaborate with colleagues.
+              Furthermore, I had the opportunity to work on multiple projects
+              simultaneously, allowing me to develop my project management and
+              multitasking skills.
+              <br /> <br />
+              This internship was an extremely enriching experience.
             </p>
 
             {datesBelow ? (
-              <p className="text-sm font-semibold ">Oct 2023 - Dec 2023</p>
+              <p className="text-sm font-semibold ">Jan 2024 - Jun 2024</p>
             ) : (
               ""
             )}
