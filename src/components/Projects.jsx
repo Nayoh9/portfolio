@@ -24,10 +24,9 @@ const Projects = ({ isDelayed, setIsDelayed }) => {
       </motion.h1>
 
       <motion.div className="mb-2 flex flex-wrap justify-center gap-2">
-        {/* <MarvelProject isDelayed={isDelayed} /> */}
+        <PortfolioPhp isDelayed={isDelayed} />
         <ScansipProject isDelayed={isDelayed} />
         <PortfolioProject isDelayed={isDelayed} />
-        <PortfolioPhp isDelayed={isDelayed} />
       </motion.div>
     </section>
   );
